@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    
+    <link rel="stylesheet" href="css/docs.css"> <!-- Docs-specific CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Documentation</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="docs.html">Docs</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="premium.html">Premium</a>
+        </nav>
+    
+        <!-- New section for Invite Button and Dropdown (below the navigation links) -->
+        <div class="additional-nav">
+            <!-- Invite Button with Discord Logo -->
+            <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="invite-button">
+                <img src="images/discord-logo.png" alt="Discord Logo" class="discord-logo"> Invite Collage Bot
+            </a>
+    
+            <!-- Dropdown Menus -->
+            <div class="dropdown">
+                <button class="dropbtn">Documentation</button>
+                <div class="dropdown-content">
+                    <a href="#introduction">Introduction</a>
+                    <a href="#commands">Commands</a>
+                    <a href="#how-to-use">How to Use</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#support">Support</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+    <h2>Collage Bot Documentation</h2>
+    <p>This page will contain all the technical documentation you need to use and integrate our services.</p>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h3>Introduction</h3>
+        <p>Welcome to the documentation! Collage Bot is a versatile Discord bot that provides many premium commands and features, for completely free. It helps you track your music collection and enjoy seamless integration with your server.</p>
+        <hr>
+        <hl>Please note that Collage is still in its development stages, with new commands and features being added every day. The current moderation commands will only work if you are on the whitelist, which is not a automatic thing. These features will be Implemented at a later date for everyone to use. The premium features are marked with a ⭐ and can only be used in our main Discord server. This will also change at a later date so if you have the premium role in our Discord server, you will be able to use premium features everywhere.</hl>
+        <hr>
+    </section>
+    
+    <!-- How to Use Section -->
+    <section id="how-to-use">
+        <h3>How to Use</h3>
+        <p>Follow these steps to get the service up and running:</p>
+        <ol>
+            <li>Invite Collage Bot to your server.</li>
+            <li>Use the <code>-</code> command prefix to access features.</li>
+            <li>Type <code>-help</code> to see available commands.</li>
+        </ol>
+        <hr>
+    </section>
+
+<!-- Commands Section -->
+<section id="commands">
+    <h3>Commands</h3>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>-ban</td>
+            <td>Ban a user from the server (whitelist).</td>
+            <td><code>-ban @xbox360s</code></td>
+        </tr>
+        <tr>
+            <td>-kick</td>
+            <td>Kick a user from the server (whitelist).</td>
+            <td><code>-kick @xbox360s</code></td>
+        </tr>
+        <tr>
+            <td>-lock</td>
+            <td>Locks the current channel.</td>
+            <td><code>-lock</code></td>
+        </tr>
+        <tr>
+            <td>-unlock</td>
+            <td>Unlocks the current channel.</td>
+            <td><code>-unlock</code></td>
+        </tr>
+        <tr>
+            <td>-qp</td>
+            <td>Creates a poll on your message.</td>
+            <td><code>-qp am i cool</code></td>
+        </tr>
+        <tr>
+            <td>-afk</td>
+            <td>Set a custom AFK message.</td>
+            <td><code>-afk im sleeping</code></td>
+        </tr>
+        <tr>
+            <td>-embed</td>
+            <td>Create a custom embed (whitelist).</td>
+            <td><code>-embed</code></td>
+        </tr>
+        <tr>
+            <td>-purge</td>
+            <td>Deletes a specified amount of messages from the channel (whitelist).</td>
+            <td><code>-purge 99</code></td>
+        </tr>
+        <tr>
+            <td>-bc</td>
+            <td>Clears bot messages.</td>
+            <td><code>-bc</code></td>
+        </tr>
+        <tr>
+            <td>-si</td>
+            <td>Displays server information.</td>
+            <td><code>-si</code></td>
+        </tr>
+        <tr>
+            <td>-ping</td>
+            <td>Provides bot latency.</td>
+            <td><code>-ping</code></td>
+        </tr>
+        <tr>
+            <td>-leak</td>
+            <td>Provides song file and information for a song.</td>
+            <td><code>-leak rental</code></td>
+        </tr>
+        <tr>
+            <td>-snippet</td>
+            <td>Provides known snippets of a provided song.</td>
+            <td><code>-snip k like a russian</code></td>
+        </tr>
+        <tr>
+            <td>-juiceinfo</td>
+            <td>Provides all known information on a provided song.</td>
+            <td><code>-juiceinfo push me away</code></td>
+        </tr>
+        <tr>
+            <td>-juicepic</td>
+            <td>Provides up to 10 random pictures of Juice WRLD.</td>
+            <td><code>-juicepic 10</code></td>
+        </tr>
+        <tr>
+            <td>-session</td>
+            <td>Provides a session edit for a specified song, if available.</td>
+            <td><code>-session nintendo</code></td>
+        </tr>
+        <tr>
+            <td>-juicegif</td>
+            <td>Provides up to 10 random GIFs of Juice WRLD.</td>
+            <td><code>-juicegif 7</code></td>
+        </tr>
+        <tr>
+            <td>-stem</td>
+            <td>Provides a specified stem (Not All Supported).</td>
+            <td><code>-stem violence</code></td>
+        </tr>
+        <tr>
+            <td>-remaster</td>
+            <td>Provides a specified remaster.</td>
+            <td><code>-remaster timezone</code></td>
+        </tr>
+        <tr>
+            <td>-comp</td>
+            <td>⭐ Provides a user with an updated Mega comp in the user's DMs.</td>
+            <td><code>-comp</code></td>
+        </tr>
+        <tr>
+            <td>-date</td>
+            <td>⭐ Provides all leaks from a specified date.</td>
+            <td><code>-date 8/22/24</code></td>
+        </tr>
+        <tr>
+            <td>-leaktracker</td>
+            <td>⭐ Sends all dated leaks to the user's DMs.</td>
+            <td><code>-leaktracker</code></td>
+        </tr>
+        
+    </table>
+</section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h3>FAQ</h3>
+        <hr>
+        <p><strong>Q: How do I add the bot to my server?</strong></p>
+        <p>A: Click the "Invite Bot" button above.</p>
+        <hr>
+
+        <p><strong>Q: How do I report a bug?</strong></p>
+        <p>A: Join our <a href="https://discord.gg/wotp" target="_blank">Discord support server</a> and report it in the #support channel.</p>
+        <hr>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support">
+        <h3>Support</h3>
+        <hr>
+        <p>If you need help or have questions, feel free to reach out to us:</p>
+        <p>Join our <a href="https://discord.gg/wotp" target="_blank">Discord Support Server</a></p>
+        <p>Email us at: <a href="mailto:commitarson@representative.com">commitarson@representative.com</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 collagebot.info</p>
+</footer>
+
+</body>
+</html>
