@@ -21,62 +21,76 @@
 </header>
 
 <div class="container">
-    <h2>Our Privacy Policy</h2>
-    <p>We take your privacy seriously. Please read our privacy policy carefully.</p>
+    <h2>Privacy Policy for Collage Bot</h2>
+    <p><strong>Last Updated:</strong> October 24, 2025</p>
     <hr>
 
-    <h3>1. Definitions</h3>
-    <p><strong>"We," "Our," or "Us":</strong> Refers to the development team of Collage, the creators, and maintainers of the Discord bot.</p>
-    <p><strong>"You" or "Your":</strong> Refers to the end user of our services.</p>
-    <p><strong>"Services":</strong> Refers to all the services and functionalities that the Discord bot Collage provides.</p>
-    <p><strong>"Bot":</strong> Refers to the Discord bot Collage, which is used to offer services and commands on Discord servers.</p>
+    <h3>1. Introduction</h3>
+    <p>Welcome to Collage ("Bot"). This Privacy Policy explains how we ("We," "Our," or "Us") collect, use, and protect your information when you interact with our Services on Discord. By adding our Bot to your server or using its commands, you agree to the collection and use of information in accordance with this policy.</p>
     <hr>
 
-    <h3>2. Information We Collect</h3>
-    <p>We collect and store certain types of data to offer the services you request and to improve your experience with Collage. The types of data we collect are as follows:</p>
+    <h3>2. What Data We Collect and Why</h3>
+    <p>We only collect data that is necessary for the Bot to function properly and provide its features.</p>
+
+    <h4>A. Information You Provide Directly</h4>
     <ul>
-        <li><strong>LastFM Username:</strong> When you use the -fmset (username) command, you consent to us storing your LastFM username in our database for the purpose of accessing your LastFM account data to provide personalized services. This data is used solely for integration purposes and is not shared with third parties.</li>
-        <li><strong>Server IDs:</strong> We collect the server IDs of the Discord servers the bot joins. This information is used to monitor and prevent misuse or abuse of the bot within these servers.</li>
-        <li><strong>Temporary Data Storage:</strong> To properly execute your commands, we may temporarily store certain data for a maximum of 7 days or 1,500 lines (whichever comes first).</li>
+        <li><strong>Last.fm Username:</strong> When you use the <code>-fmset</code> command, you provide your Last.fm username. We store this username to connect to the Last.fm API and provide you with music-related features. This data is used solely for this purpose.</li>
+    </ul>
+
+    <h4>B. Information Collected Automatically for Core Features</h4>
+    <ul>
+        <li><strong>User IDs, Server (Guild) IDs, and Channel IDs:</strong> We store these Discord-provided IDs to manage core functionalities. This includes saving user-specific data for our leveling and economy systems, remembering server-specific settings, and preventing abuse by blacklisting users or servers where necessary.</li>
+        <li><strong>Commands You Use:</strong> We process the commands you run to provide the Bot's services. This data is not stored long-term, but it is necessary for the Bot to respond to you.</li>
+    </ul>
+
+    <h4>C. Special Data Categories (Related to Privileged Intents)</h4>
+    <p>To provide specific, advanced features, we require Privileged Intents, which allow us to access additional information as described below:</p>
+    <ul>
+        <li><strong>Message Content for the Snipe Command:</strong> To enable the <code>-snipe</code> command, the Bot temporarily stores the content, author, and timestamp of the most recently deleted message in a channel. This data is stored in the Bot's temporary memory (not in a permanent database) and is automatically overwritten when a new message is deleted in that channel, or after a short period (typically under 10 minutes), whichever comes first. This is a moderation feature for transparency and context.</li>
+        <li><strong>Message Content for the Leveling System:</strong> To ensure a fair and engaging leveling system, the Bot processes message content to award experience (XP) based on activity, which helps prevent spam. We <strong>do not store the content of your messages</strong> for this feature. We only perform a real-time, non-sensitive analysis (e.g., checking the message length). You have full control and can opt-out of the leveling system at any time using the <code>-xpoptout</code> command.</li>
     </ul>
     <hr>
 
-    <h3>3. How We Use Your Data</h3>
-    <p>The data we collect is used to offer the services you request, maintain and improve the bot, and prevent misuse. Specifically, we use your data in the following ways:</p>
+    <h3>3. Data Storage and Retention</h3>
     <ul>
-        <li><strong>User Data:</strong> We use your LastFM username to provide LastFM-related features, like fetching your music data. Your server ID may be used for abuse prevention, and if necessary, for blacklisting a server from using the bot.</li>
-        <li><strong>Temporary Data:</strong> The temporary data (user ID, command, and optional data) is necessary for us to process your requests and execute commands properly. After 7 days or once 1,500 lines of data are accumulated, the data is automatically deleted.</li>
-        <li><strong>Message Deletion:</strong> We store recently deleted messages from any user of our service for a maximum of two hours to prevent abuse and ensure compliance with our guidelines. After two hours, the message data is automatically deleted.</li>
+        <li><strong>User-Provided Data (Last.fm, Levels):</strong> This data is stored until you request its deletion.</li>
+        <li><strong>Snipe Data:</strong> As stated above, this data is temporary and is not stored in a long-term database.</li>
+        <li><strong>Server Configurations:</strong> Settings data is stored as long as the Bot remains in the server.</li>
     </ul>
     <hr>
 
-    <h3>4. Your Rights and Control Over Your Data</h3>
-    <p>You have the right to request the deletion of your data at any time. If you wish to delete your information or any stored data related to your account, you can do so by following these steps:</p>
-    <ul>
-        <li><strong>Request Deletion:</strong> Contact us via email at commitarson@representative.com or join our support server and send a direct message to one of the following team members: xbox360s, ihavemaxauraa, or houndswrldd.</li>
-        <li><strong>Access to Data:</strong> You may also request a copy of the data we have stored about you.</li>
-    </ul>
+    <h3>4. Data Sharing and Disclosure</h3>
+    <p>We do not sell, trade, or share your personal information with any third parties for marketing or commercial purposes. We may only disclose your information if required to do so by law or in the good-faith belief that such action is necessary to comply with a legal obligation.</p>
     <hr>
 
-    <h3>5. Age Restrictions</h3>
-    <p>Collage does not knowingly collect personal information from children under the age of 13. If we learn that we have inadvertently collected data from a user under 13 years old, we will immediately take steps to delete that data. If you believe we have mistakenly collected data from a child under 13, please contact us at commitarson@representative.com or via our support server.</p>
+    <h3>5. Your Rights and Control Over Your Data</h3>
+    <p>You have control over your data.</p>
+    <ul>
+        <li><strong>Right to Access:</strong> You can request a copy of the data we have stored about you.</li>
+        <li><strong>Right to Deletion:</strong> You have the right to request the deletion of your user-specific data (like your Last.fm username and leveling progress) at any time.</li>
+        <li><strong>Right to Opt-Out:</strong> You can opt-out of the XP/leveling system at any time using the <code>-xpoptout</code> command.</li>
+    </ul>
+    <p>To exercise these rights, please contact us using the methods provided in Section 9.</p>
     <hr>
-    <h3>6. Data Security</h3>
-    <p>We are committed to ensuring the security of your personal information. We implement reasonable and industry-standard technical measures to protect the data we collect from unauthorized access, loss, misuse, or alteration.</p>
+
+    <h3>6. Age Restrictions</h3>
+    <p>Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and you believe your child has provided us with personal data, please contact us. If we become aware that we have collected data from a child under 13, we will take immediate steps to remove that information.</p>
     <hr>
-    <h3>7. Data Sharing and Disclosure</h3>
-    <p><strong>No Third-Party Sharing:</strong> We do not sell, trade, or share your personal information with third parties for commercial purposes.</p>
-    <p><strong>Legal Disclosure:</strong> We may disclose your information if required to do so by law, or if we believe in good faith that such action is necessary to comply with legal obligations.</p>
+
+    <h3>7. Data Security</h3>
+    <p>We are committed to protecting your information. We implement reasonable and industry-standard security measures to prevent unauthorized access, use, or alteration of your data.</p>
     <hr>
+
     <h3>8. Changes to This Privacy Policy</h3>
-    <p>We reserve the right to update or modify this Privacy Policy at any time. If we make significant changes to how we collect, use, or process your data, we will notify you through the bot or our website. We encourage you to periodically review this Privacy Policy for any changes.</p>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on this page and/or through an announcement in our support server. You are advised to review this Privacy Policy periodically for any changes.</p>
     <hr>
+
     <h3>9. Contact Us</h3>
-    <p>If you have any questions or concerns about this Privacy Policy, or if you would like to exercise your rights regarding your data, please contact us:</p>
+    <p>If you have any questions, concerns, or requests regarding your data or this Privacy Policy, please contact us:</p>
     <ul>
-        <li>Email: commitarson@representative.com</li>
-        <li>Support Server: https://discord.gg/wotp</li>
-        <li>Team Members: Direct message xbox360s, ihavemaxauraa, or houndswrldd on our support server.</li>
+        <li><strong>Email:</strong> commitarson@representative.com</li>
+        <li><strong>Support Server:</strong> https://discord.gg/wotp</li>
+        <li><strong>Team Members:</strong> You can send a direct message to <code>xbox360s</code>, <code>ihavemaxauraa</code>, or <code>houndswrldd</code> in our support server.</li>
     </ul>
 </div>
 
