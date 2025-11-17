@@ -1,3 +1,5 @@
+/* pp.css */
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -11,152 +13,124 @@ body {
     background-color: #252323;
     color: #e2e2e2;
     margin: 0;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column; /* Allows footer to be pushed down */
 }
 
-/* Header Styling */
+/* Header Styling (Consistent with other pages) */
 header {
     background: #000000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    width: 100%;  /* Ensure header spans the full width */
+    width: 100%;
+}
+
+header h1 {
+    color: #FF5722;
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 nav a {
     margin: 15px;
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #FF5722; /* Accent hover */
+    text-decoration: none;
 }
 
 /* Container Styling */
 .container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 20px auto; /* Centering container with some top margin */
-    text-align: left; /* Align text to the left */
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto; /* Centering container */
+    padding: 30px;
+    text-align: left;
+    background-color: #302f2f; /* Dark background for content block */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    flex-grow: 1; /* Allows container to push footer down */
 }
 
 /* Title Styling */
-h1 {
-    color: #333;
-    font-size: 2rem; /* Adjust the size of the title */
+.container h2 {
+    color: #FF5722; /* Accent color for main title */
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Section Headings */
+.container h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.container h4 {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph and List Styling */
+p {
+    font-size: 1rem;
+    line-height: 1.7;
     margin-bottom: 20px;
 }
 
-/* Paragraph Styling (content text size) */
-p {
-    font-size: 1rem; /* Adjust text size */
-    line-height: 1.8;
-    margin-bottom: 20px; /* Space below paragraphs */
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Command Code Style */
+code {
+    background-color: #4d4d4d;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.95em;
+    color: #FFD700;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    border-top: 1px solid #474747; /* Darker line for dark theme */
+    margin: 25px 0;
+    width: 100%;
 }
 
 /* Footer Styling */
 footer {
-    background: #333;
-    color: #fff;
+    background: #000000;
+    color: #7c7b7b;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 40px; /* Space between container and footer */
     width: 100%;
-    bottom: 0;
-}
-
-/* Socials Wrapper */
-.socials-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 50px; /* Space between the two sections */
-    margin-top: 20px;
-}
-
-/* Individual Social Section */
-.socials {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    text-align: center;
-    gap: 10px; /* Space between links */
-}
-
-/* Social Headings */
-.socials h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Social Box Styling */
-.social-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    padding: 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #333;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-/* GitHub Button Styling */
-.social-box:nth-child(2) {
-    background-color: #0d8ae3;
-}
-
-.social-box img {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-
-.social-box:hover {
-    transform: scale(1.05);
-    background-color: #555555;
-}
-
-/* GitHub Button Hover Styling */
-.social-box:nth-child(2):hover {
-    background-color: #1DA1F2;
-}
-
-/* Discord Button Styling */
-.discord-button {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #5865F2;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.discord-button:hover {
-    transform: scale(1.05);
-    background-color: #4752C4;
+    border-top: 1px solid #333;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .socials-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
     }
 }
-
-
-/* Styling the horizontal rule (line separator) */
-hr {
-    border: 0; /* Remove default borders */
-    border-top: 1px solid #e2e2e2; /* Line color */
-    margin: 20px 0; /* Spacing around the line */
-    width: 100%; /* Full width, can adjust if you want a smaller line */
-}
-
