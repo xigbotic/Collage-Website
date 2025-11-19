@@ -145,9 +145,9 @@
                 <td><code>@collage date 8/22/24</code></td>
             </tr>
             <tr>
-                <td>@collage producer</td>
+                <td>@collage juiceproducer</td>
                 <td>Provides all Juice WRLD tracks made by a specific producer.</td>
-                <td><code>@collage producer nick mira</code></td>
+                <td><code>@collage juiceproducer nick mira</code></td>
             </tr>
             <tr>
                 <td>@collage leaktracker</td>
@@ -179,10 +179,137 @@
                 <td>Get any leaked song from Gunna.</td>
                 <td><code>@collage gunnaleak friday</code></td>
             </tr>
+            <tr>
+                <td>@collage juicepreview</td>
+                <td>Find all songs previewed on a specific date.</td>
+                <td><code>@collage juicepreview april 14 2018</code></td>
+            </tr>
+            <tr>
+                <td>@collage juiceengineer</td>
+                <td>Find all tracks made by a specific engineer</td>
+                <td><code>@collage juiceengineer Jcraig</code></td>
+            </tr>
+            <tr>
+                <td>@collage juiceloc</td>
+                <td>Find all tracks recorded at a specific recording studio.</td>
+                <td><code>@collage juiceloc Glass Tree</code></td>
+            </tr>
 
         </table>
     </div>
 
+
+    <div id="commands-Artist" class="command-category">
+        <h4>Artist Commands</h4>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>@collage leak</td>
+                <td>Provides song file and information for a song.</td>
+                <td><code>@collage leak rental</code></td>
+            </tr>
+            <tr>
+                <td>@collage snippet</td>
+                <td>Provides known snippets of a provided song.</td>
+                <td><code>@collage snip k like a russian</code></td>
+            </tr>
+            <tr>
+                <td>@collage sotd</td>
+                <td>Sends a randomly picked Juice WRLD song each day.</td>
+                <td><code>@collage sotd</code></td>
+            </tr>
+            <tr>
+                <td>@collage juiceinfo</td>
+                <td>Provides all known information on a Juice WRLD song.</td>
+                <td><code>@collage juiceinfo push me away</code></td>
+            </tr>
+            <tr>
+                <td>@collage juicegb</td>
+                <td>Provides information on any past Juice WRLD group buy.</td>
+                <td><code>@collage juicegb call me whenever</code></td>
+            </tr>
+            <tr>
+                <td>@collage juicepic</td>
+                <td>Provides up to 10 random pictures of Juice WRLD.</td>
+                <td><code>@collage juicepic 6</code></td>
+            </tr>
+            <tr>
+                <td>@collage session</td>
+                <td>Provides a session edit for a specified song, if available.</td>
+                <td><code>@collage session nintendo</code></td>
+            </tr>
+            <tr>
+                <td>@collage listallsessions</td>
+                <td>Provides a list of all leaked session edits.</td>
+                <td><code>@collage listallsessions</code></td>
+            </tr>
+            <tr>
+                <td>@collage juicegif</td>
+                <td>Provides up to 10 random GIFs of Juice WRLD.</td>
+                <td><code>@collage juicegif 7</code></td>
+            </tr>
+            <tr>
+                <td>@collage stem</td>
+                <td>Provides a specified stem.</td>
+                <td><code>@collage stem violence</code></td>
+            </tr>
+            <tr>
+                <td>@collage remaster</td>
+                <td>Provides a specified remaster.</td>
+                <td><code>@collage remaster timezone</code></td>
+            </tr>
+            <tr>
+                <td>@collage freestyle</td>
+                <td>Get any studio recorded freestyle from Juice WRLD.</td>
+                <td><code>@collage freestyle Japan</code></td>
+            </tr>
+            <tr>
+                <td>@collage erainfo</td>
+                <td>Get information on a specified era.</td>
+                <td><code>@collage erainfo goodbye & good riddance</code></td>
+            </tr>
+            <tr>
+                <td>@collage cover</td>
+                <td>Provides one (or multiple) covers for a specified song or album.</td>
+                <td><code>@collage cover death race for love</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail</td>
+                <td>View your or another persons grail list.</td>
+                <td><code>@collage grail @xbox360s</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail add</td>
+                <td>Add a song to your grail list.</td>
+                <td><code>@collage grail add Benjamin</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail clear</td>
+                <td>Clear your grail list.</td>
+                <td><code>@collage grail clear</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail update</td>
+                <td>Update your grail list.</td>
+                <td><code>@collage grail update My Year</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail gifadd</td>
+                <td>Add your own GIF to your grail list thumbnail embed.</td>
+                <td><code>@collage grail gifadd (gif link here)</code></td>
+            </tr>
+            <tr>
+                <td>@collage grail gifremove</td>
+                <td>Remove your GIF from your grail list.</td>
+                <td><code>@collage grail gifremove</code></td>
+            </tr>
+
+        </table>
+    </div>
 
     <div id="commands-moderation" class="command-category">
         <h4>Moderation &amp; Utility</h4>
@@ -360,117 +487,7 @@
         </table>
     </div>
 
-    <div id="commands-Artist" class="command-category">
-        <h4>Artist Commands</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage leak</td>
-                <td>Provides song file and information for a song.</td>
-                <td><code>@collage leak rental</code></td>
-            </tr>
-            <tr>
-                <td>@collage snippet</td>
-                <td>Provides known snippets of a provided song.</td>
-                <td><code>@collage snip k like a russian</code></td>
-            </tr>
-            <tr>
-                <td>@collage sotd</td>
-                <td>Sends a randomly picked Juice WRLD song each day.</td>
-                <td><code>@collage sotd</code></td>
-            </tr>
-            <tr>
-                <td>@collage juiceinfo</td>
-                <td>Provides all known information on a Juice WRLD song.</td>
-                <td><code>@collage juiceinfo push me away</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicegb</td>
-                <td>Provides information on any past Juice WRLD group buy.</td>
-                <td><code>@collage juicegb call me whenever</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicepic</td>
-                <td>Provides up to 10 random pictures of Juice WRLD.</td>
-                <td><code>@collage juicepic 6</code></td>
-            </tr>
-            <tr>
-                <td>@collage session</td>
-                <td>Provides a session edit for a specified song, if available.</td>
-                <td><code>@collage session nintendo</code></td>
-            </tr>
-            <tr>
-                <td>@collage listallsessions</td>
-                <td>Provides a list of all leaked session edits.</td>
-                <td><code>@collage listallsessions</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicegif</td>
-                <td>Provides up to 10 random GIFs of Juice WRLD.</td>
-                <td><code>@collage juicegif 7</code></td>
-            </tr>
-            <tr>
-                <td>@collage stem</td>
-                <td>Provides a specified stem.</td>
-                <td><code>@collage stem violence</code></td>
-            </tr>
-            <tr>
-                <td>@collage remaster</td>
-                <td>Provides a specified remaster.</td>
-                <td><code>@collage remaster timezone</code></td>
-            </tr>
-            <tr>
-                <td>@collage freestyle</td>
-                <td>Get any studio recorded freestyle from Juice WRLD.</td>
-                <td><code>@collage freestyle Japan</code></td>
-            </tr>
-            <tr>
-                <td>@collage erainfo</td>
-                <td>Get information on a specified era.</td>
-                <td><code>@collage erainfo goodbye & good riddance</code></td>
-            </tr>
-            <tr>
-                <td>@collage cover</td>
-                <td>Provides one (or multiple) covers for a specified song or album.</td>
-                <td><code>@collage cover death race for love</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail</td>
-                <td>View your or another persons grail list.</td>
-                <td><code>@collage grail @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail add</td>
-                <td>Add a song to your grail list.</td>
-                <td><code>@collage grail add Benjamin</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail clear</td>
-                <td>Clear your grail list.</td>
-                <td><code>@collage grail clear</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail update</td>
-                <td>Update your grail list.</td>
-                <td><code>@collage grail update My Year</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail gifadd</td>
-                <td>Add your own GIF to your grail list thumbnail embed.</td>
-                <td><code>@collage grail gifadd (gif link here)</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail gifremove</td>
-                <td>Remove your GIF from your grail list.</td>
-                <td><code>@collage grail gifremove</code></td>
-            </tr>
 
-        </table>
-    </div>
 
     <div id="commands-economy" class="command-category">
         <h4>Economy &amp; Games</h4>
