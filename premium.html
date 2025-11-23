@@ -3,143 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium - Collage</title>
-    <link rel="stylesheet" href="css/premium.css">
+    <title>Collage | Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- LINK TO THE SAME CSS FILE AS YOUR DOCS -->
+    <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-    <header>
-        <h1>Collage Premium</h1>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="docs.html">Docs</a>
-            <a href="changelog.html">Changelog</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-            <a href="premium.html">Premium</a>
-        </nav>
-        <div class="header-buttons">
-            <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" class="invite-button" target="_blank">
-                Invite Collage
-            </a>
-        </div>
-    </header>
 
-    <div class="container">
-        <h2>What Is Premium?</h2>
-        <p>Premium is a service we offer that gives access to commands and exclusive features that regular users do not have access to.</p>
-        <p class="disclaimer">DISCLAIMER: Premium is a service that is still in development, as is the rest of the bot. These features may change or new features may be added at any time without warning. Don't complain.</p>
-        <hr>
+    <!-- Layout Wrapper -->
+    <div class="docs-layout">
         
-        <section class="command-table-wrapper">
-            <h3>⭐ Premium Commands ⭐</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Command</th>
-                        <th>Description</th>
-                        <th>Example Usage</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>@collage yt2mp3</code></td>
-                        <td>Convert any Youtube link into a MP3 file.</td>
-                        <td><code>@collage yt2mp3 (youtube link)</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage repost</code></td>
-                        <td>Reposts any Instagram, Tiktok, or Twitter video into the chat.</td>
-                        <td><code>@collage repost (link)</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage comp</code></td>
-                        <td>Get a comp from Juice WRLD, Lil Uzi Vert, Gunna, and Playboi Carti.</td>
-                        <td><code>@collage comp</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage date</code></td>
-                        <td>Provides all leaks on a specified date.</td>
-                        <td><code>@collage date 8/22/24</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage juiceproducer</code></td>
-                        <td>Provides all Juice WRLD tracks made by a specific producer.</td>
-                        <td><code>@collage juiceproducer nick mira</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage leaktracker</code></td>
-                        <td>Sends all dated leaks to the user.</td>
-                        <td><code>@collage leaktracker</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage protools</code></td>
-                        <td>Get any leaked Juice WRLD Pro Tools session.</td>
-                        <td><code>@collage protools I Hate Her Friends</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage uzileak</code></td>
-                        <td>Get any leaked song from Lil Uzi Vert.</td>
-                        <td><code>@collage uzileak daytona</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage uziinfo</code></td>
-                        <td>Provides all known information on a Lil Uzi Vert song.</td>
-                        <td><code>@collage uziinfo richard millie</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage cartileak</code></td>
-                        <td>Get any leaked song from Playboi Carti.</td>
-                        <td><code>@collage cartileak vivienne westwood</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>@collage gunnaleak</code></td>
-                        <td>Get any leaked song from Gunna.</td>
-                        <td><code>@collage gunnaleak friday</code></td>
-                    </tr>
-                    <tr>
-                        <td>@collage juicepreview</td>
-                        <td>Find all songs previewed on a specific date.</td>
-                        <td><code>@collage juicepreview april 14 2018</code></td>
-                    </tr>
-                    <tr>
-                        <td>@collage juiceengineer</td>
-                        <td>Find all tracks made by a specific engineer</td>
-                        <td><code>@collage juiceengineer Jcraig</code></td>
-                    </tr>
-                    <tr>
-                        <td>@collage juiceloc</td>
-                        <td>Find all tracks recorded at a specific recording studio.</td>
-                        <td><code>@collage juiceloc Glass Tree</code></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <section>
-            <h3>How Can I Get Premium? </h3>
-            <p>Premium can be accessed in two ways:</p>
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
             
-            <div class="premium-options">
-                <h4>Option 1: Server Boosting</h4>
-                <p>Premium can be accessed by boosting our server, <a href="https://discord.gg/wotp" style="color:#FF5722; text-decoration:none;">WRLD of the Perced</a>.</p>
-
-                <h4>Option 2: Lifetime Purchase via PayPal ($7 USD)</h4>
-                <p>Send $7 USD for lifetime premium to our PayPal address:</p>
-                <div class="paypal-info">
-                    <p><strong>PayPal Link:</strong> <a href="https://paypal.me/xigbotic" style="color:#FF5722; text-decoration:none;">Click Here For PayPal</a></p>
-                    <p class="important-note"><strong>IMPORTANT:</strong> You must send your money as Friends & Family and include your Discord Tag (e.g., user#1234 or @username) in the payment message. If you do not follow these instructions, you will not be given premium and your money will be sent back.</p>
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <!-- Active class added here -->
+                    <a href="premium.html" class="active">Premium</a>
                 </div>
+
+                <div class="nav-group">
+                    <p class="nav-header">Links</p>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+
+                <div class="nav-footer">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="btn-primary">
+                        Invite Collage
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            
+            <div class="hero-section">
+                <h2>Collage Premium <span class="badge premium" style="font-size: 0.4em; vertical-align: middle;">Gold</span></h2>
+                <p class="subtitle">Access exclusive commands, higher limits, and support the development.</p>
             </div>
 
-            <p class="support-contact">If it has been longer than 16 hours and you still have not received premium, please contact <code>@4nbx</code> or <code>@xbox360s</code> on Discord through our <a href="https://discord.gg/wotp" style="color:#FF5722; text-decoration:none;">support server</a>.</p>
-        </section>
+            <div class="content-wrapper">
+                
+                <!-- Disclaimer Alert -->
+                <div class="alert-box">
+                    <strong>DISCLAIMER:</strong> Premium is a service that is still in development. Features may change or be added without warning. Don't complain.
+                </div>
+
+                <!-- Purchasing Options (Reusing FAQ Grid for Layout) -->
+                <div class="section-header">
+                    <h3>How to Purchase</h3>
+                    <p>Select a method below to unlock premium access instantly.</p>
+                </div>
+
+                <div class="faq-grid" style="margin-bottom: 50px;">
+                    <!-- Option 1 -->
+                    <div class="faq-item" style="border-color: var(--accent);">
+                        <h4 style="color: #fff; margin-bottom: 10px;">Option 1: Server Boosting</h4>
+                        <p>Unlock premium simply by boosting our official server.</p>
+                        <hr style="margin: 15px 0;">
+                        <a href="https://discord.gg/wotp" target="_blank" class="btn-primary" style="display:inline-block; width:100%; margin-top:0;">Boost "WRLD of the Perced"</a>
+                    </div>
+
+                    <!-- Option 2 -->
+                    <div class="faq-item" style="border-color: var(--accent);">
+                        <h4 style="color: #fff; margin-bottom: 10px;">Option 2: PayPal ($7 USD)</h4>
+                        <p>Purchase a <strong>Lifetime</strong> subscription via PayPal.</p>
+                        
+                        <div style="background: rgba(255,87,34,0.1); padding: 10px; border-radius: 4px; margin: 10px 0; font-size: 0.9em; color: #ffcccb;">
+                            <strong>IMPORTANT:</strong> Send as "Friends & Family" and include your Discord Tag (e.g., user#1234) in the note.
+                        </div>
+
+                        <a href="https://paypal.me/xigbotic" target="_blank" class="btn-primary" style="display:inline-block; width:100%; margin-top:0;">Pay via PayPal</a>
+                    </div>
+                </div>
+
+                <!-- Premium Commands Table -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>⭐ Premium Feature List</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="30%">Command</th>
+                                    <th width="40%">Description</th>
+                                    <th width="30%">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>yt2mp3</code></td>
+                                    <td>Convert any Youtube link into a MP3 file.</td>
+                                    <td><code>@collage yt2mp3 (link)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>repost</code></td>
+                                    <td>Reposts Instagram, Tiktok, or Twitter videos.</td>
+                                    <td><code>@collage repost (link)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>comp</code></td>
+                                    <td>Get a comp from Juice WRLD, Uzi, Gunna, Carti.</td>
+                                    <td><code>@collage comp</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>date</code></td>
+                                    <td>Provides all leaks on a specified date.</td>
+                                    <td><code>@collage date 8/22/24</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceproducer</code></td>
+                                    <td>Juice WRLD tracks by a specific producer.</td>
+                                    <td><code>@collage juiceproducer nick mira</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>leaktracker</code></td>
+                                    <td>Sends all dated leaks to the user.</td>
+                                    <td><code>@collage leaktracker</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>protools</code></td>
+                                    <td>Get any leaked Juice WRLD Pro Tools session.</td>
+                                    <td><code>@collage protools I Hate Her Friends</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>uzileak</code></td>
+                                    <td>Get any leaked song from Lil Uzi Vert.</td>
+                                    <td><code>@collage uzileak daytona</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>uziinfo</code></td>
+                                    <td>Provides all known info on a Lil Uzi Vert song.</td>
+                                    <td><code>@collage uziinfo richard millie</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cartileak</code></td>
+                                    <td>Get any leaked song from Playboi Carti.</td>
+                                    <td><code>@collage cartileak vivienne westwood</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>gunnaleak</code></td>
+                                    <td>Get any leaked song from Gunna.</td>
+                                    <td><code>@collage gunnaleak friday</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juicepreview</code></td>
+                                    <td>Find all songs previewed on a specific date.</td>
+                                    <td><code>@collage juicepreview april 14 2018</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceengineer</code></td>
+                                    <td>Find all tracks made by a specific engineer.</td>
+                                    <td><code>@collage juiceengineer Jcraig</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceloc</code></td>
+                                    <td>Find all tracks recorded at a specific studio.</td>
+                                    <td><code>@collage juiceloc Glass Tree</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Support Box -->
+                <section id="support">
+                    <div class="support-box">
+                        <h3>Missing Your Premium?</h3>
+                        <p>If it has been longer than 16 hours, please contact <code>@4nbx</code> or <code>@xbox360s</code>.</p>
+                        <p style="margin-top: 10px;"><a href="https://discord.gg/wotp" style="text-decoration: underline;">Join Support Server</a></p>
+                    </div>
+                </section>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info. Still better than everything else.</p>
+                </footer>
+            </div>
+        </main>
     </div>
 
-    <footer>
-        <p>Made by <code>xbox360s</code> on Discord | Support Server: <a href="https://discord.gg/wotp" style="color:#7c7b7b; text-decoration:none;">discord.gg/wotp</a></p>
-        <p>&copy; 2025 collagebot.info. We're still better than your favorite bot.</p>
-    </footer>
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

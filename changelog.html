@@ -3,169 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collage Changelog: We Didn't Ask For Your Opinion.</title>
+    <title>Collage | Changelog</title>
     
-    <link rel="stylesheet" href="css/docs.css"> </head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- LINK TO THE SAME CSS FILE -->
+    <link rel="stylesheet" href="css/docs.css">
+    
+    <style>
+        /* Extra styles specific to changelog list formatting */
+        .changelog-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .changelog-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .changelog-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 5px;
+            font-weight: bold;
+        }
+        .version-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: var(--font-code);
+            margin-left: 10px;
+            border: 1px solid var(--border-color);
+        }
+        .card-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .date-meta {
+            margin-left: auto;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+    </style>
+</head>
 <body>
 
-    <header>
-        <h1>Collage Changelog</h1>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="docs.html">Docs</a>
-            <a href="changelog.html">Changelog</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-            <a href="premium.html">Premium</a>
-        </nav>
-
-        <div class="additional-nav">
-            <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="invite-button">
-                Invite Collage
-            </a>
-        </div>
-    </header>
-
-<div class="container">
-    <h2>Changelog: Things We Changed (Mostly For The Better)</h2>
-    <p>This is where we document our superior updates. Read it or don't, but don't ask us about old features. They're gone for a reason.</p>
-
-    <section class="changelog">
-
-
-
-    <h3>Version 3.0.1 - November 18, 2025</h3>
-    <ul>
-        <li>💸 NEW: Introducing the Price command. Finally, a way to get a detailed report on a cryptocurrency by name or symbol. Now you can obsess over your impending poverty with maximum precision. You're welcome.</li>
-        <li>⬆️ IMPROVED: Cover Command. We took the Cover command and injected it with more data than your hard drive can handle. We indexed an additional 3,195 covers and, for the first time, actually indexed them correctly. Expect fewer art-related existential crises.</li>
-        <li>✨ IMPROVED (LOL): Remember in the last update when we told you we're "only focusing on core functionality" and "Snippets will no longer receive database updates as often"? Good one. We just dropped an additional 139 new Snippets. Go ahead, try and use that quote against us. We dare you.</li>
-        <li>🧪 TESTING: We've deployed aggressive caching for the Snippet command. If it doesn't spontaneously combust, we're bringing it to the Leak command next. Why? Because you deserve less waiting and more listening. (Mostly, we just enjoy making the database engine suffer.)</li>
-        <li>
-            <span style="color: #FF5722;">⭐ PREMIUM EXPANSION: More Power for Less-Poor People</span>
-            <ul>
-                <li>🔍 New: JuicePreview. Search for tracks based on when the snippet or preview date was released. You can now track your favorite leaks with chronologically organized desperation.</li>
-                <li>🎧 New: JuiceEngineer. Find all tracks crafted by a specific audio engineer. Get the details you need to be an insufferable audio snob.</li>
-                <li>🎶 New: JuiceProducer. Same as above, but for the producer. Now you can assign credit (or blame) with laser-like accuracy.</li>
-                <li>📍 New: JuiceLoc. Search for tracks recorded at a specific studio. Perfect for tracking down that one mythical session. Stop asking us for it.</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-
-    <h3>Version 3.0.0 - November 16, 2025 (The Total Overhaul)</h3>
-    <ul>
-        <li>🚀 REWRITE: The entire core backend has been rebuilt from the ground up for superior speed, stability, and resource efficiency. The previous architecture was an embarrassment.</li>
-        <li>📈 STATS: Since the last update, our growth is your problem. We now handle 109 Servers and 23,840 Users, having processed 102,690 Total Commands and uploaded 234.3 GB of data.</li>
-        <li>✨ NEW: Added Steal Emoji (<code>@collage stealemoji</code>) and Steal Sticker (<code>@collage stealsticker</code>) commands. Finally, you can hoard resources properly.</li>
-        <li>✨ NEW: Added JuiceGB command for previous Juice WRLD group buy tracking.</li>
-        <li>✨ NEW: Added Cover command for quick artwork retrieval.</li>
-        <li>✨ NEW: Added Era Info (`-erainfo`) for detailed era info. Idiot.</li>
-        <li>⬆️ Improved: The Session command and List All Sessions command now send sessions directly in the chat instead of unreliable external links. Less clicking, more data.</li>
-        <li>⬆️ Improved: Reworked database structure for the Juice Info command. (Note: Tracker updates will be less frequent temporarily).</li>
-        <li>🔨 Fixed: Implemented major stability patches to eliminate recent outages. The bot will now tolerate your high usage better.</li>
-        <li>🗑️ Removed: Snippets will no longer receive database updates as often. Thank @angzyjr in news for new ones. We only focus on core functionality.</li>
-        <li>🗑️ Removed: The Snipe (<code>-snipe / -s</code>) and Clear Snipe (<code>-clearsnipe / -cs</code>) commands. These advanced features required Discord to approve unnecessary "privileged intents"—a formality they were unwilling to execute. We refuse to compromise our architecture for their bureaucracy.</li>
-        <li>
-            <span style="color: #FF5722;">⭐ PREMIUM EXPANSION</span>
-            <ul>
-                <li>✨ New: Pro Tools command (`-protools`) to access leaked Juice WRLD sessions (currently GB&GR and earlier, with later material incoming).</li>
-                <li>✨ New: Cartileak, Gunnaleak, and UziInfo commands added. Your favorite rappers are now fully indexed.</li>
-                <li>✨ New: Repost command added to instantly extract and post Twitter/TikTok/Instagram video content directly to Discord.</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-
-
+    <!-- Layout Wrapper -->
+    <div class="docs-layout">
         
-        <h3>Version 2.0.3 - July 10, 2025 (The Stability Update)</h3>
-        <ul>
-            <li>🔨 Fixed: Numerous issues involving the ` -leak` command response and reliability.</li>
-            <li>🔨 Fixed: An issue where the ` -ban` command would function incorrectly.</li>
-            <li>🔨 Fixed: The ` -jail` and ` -unjail` commands are now fully operational.</li>
-            <li>🔨 Fixed: The ` -help` command now correctly provides the full command list.</li>
-            <li>✨ New: Added a filter moderation system to help control the chaos.</li>
-            <li>✨ New: Introduced a warning system.</li>
-            <li>✨ New: Added new admin commands for the jail system: ` -setjailrole`, ` -jailsetlog`, and ` -jailsetjail`.</li>
-            <li>✨ New: Added the highly requested ` -8ball` command. Now you can ask the bot stupid questions.</li>
-            <li>⬆️ Improved: UI and stability for the ` -remaster` and ` -stem` commands.</li>
-            <li>⬆️ Improved: The ` -ui` (User Info) command response and data quality.</li>
-            <li>🗑️ Removed: The ` -sob` and ` -skull` commands due to technical issues (or maybe they were just bad).</li>
-            <li>⬆️ Improved: Numerous other quality of life features (i.e., we fixed more things than we listed).</li>
-        </ul>
-        <hr>
-        
-        <h3>Version 1.2.7 - April 4, 2025 (The Music Data Push)</h3>
-        <ul>
-            <li>🔨 Fixed: Issues causing the ` -stem` and ` -remaster` commands to return errors.</li>
-            <li>✨ New: Added ` -freestyle` command to access studio-recorded freestyles.</li>
-            <li>✨ New: Added ` -era` command to determine the era of any track.</li>
-            <li>✨ New: Added the powerful ` -grail` command with many subcommands. Read the Docs.</li>
-            <li>⬆️ Improved: The ` -help` command received a new, easier-to-navigate UI (for the users who need it).</li>
-            <li>⬆️ Improved: All moderation commands are now properly permission-gated.</li>
-        </ul>
-        <hr>
-        
-        <h3>Version 1.2.6 - March 23, 2025</h3>
-        <ul>
-            <li>🔨 Fixed: An issue that prevented the ` -leak` command from searching for multiple versions of a song.</li>
-            <li>✨ New: Added ` -producer` command. (Premium Feature)</li>
-            <li>✨ New: Added ` -ttt` (Top Ten Tracks) command for Last.Fm integration.</li>
-            <li>✨ New: Added ` -convert` command to turn any YouTube link into a MP3. (Premium Feature)</li>
-        </ul>
-        <hr>
-        
-        <h3>Version 1.2.5 - March 20, 2025 (Economy Launch)</h3>
-        <ul>
-            <li>🔨 Fixed: The ` -snippet` command no longer sends an "unknown error."</li>
-            <li>✨ New: Finished support for the ` -uzileak` command. (Premium Feature)</li>
-            <li>✨ New: Added the entire Economy system with multiple commands (check Docs, we're not listing them here).</li>
-            <li>✨ New: Added 42 new snippets to the ` -snippet` command.</li>
-            <li>⬆️ Improved: Error handling is now significantly more robust.</li>
-            <li>🔨 Fixed: Resolved the issue preventing the bot from looking for multiple versions of a song.</li>
-        </ul>
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <a href="premium.html">Premium</a>
+                </div>
 
-        <hr>
+                <div class="nav-group">
+                    <p class="nav-header">Links</p>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
 
-        <h3>Version 1.2.4 - March 12, 2025</h3>
-        <ul>
-            <li>✨ New: Added full support for Last.FM commands and features.</li>
-            <li>⬆️ Improved: Fixed a bug where premium commands could only be executed in WRLD of the Perced.</li>
-            <li>📢 Announcement: Support for Uzi leaks and info is in development (Premium Feature).</li>
-        </ul>
-        <hr>
-        
-        <h3>Version 1.2.3 - March 10, 2025</h3>
-        <ul>
-            <li>✨ New: Added ` -remaster` command for high-quality remastered tracks.</li>
-            <li>✨ New: Added ` -stem` command to retrieve stems from tracks.</li>
-            <li>⬆️ Improved: Response time for the ` -leak` command is significantly faster.</li>
-            <li>🔨 Fixed: A bug causing the ` -session` command to return incorrect data.</li>
-            <li>🔨 Fixed: An issue where ` -leak` failed to return output in servers with low file size limits.</li>
-        </ul>
-        <hr>
+                <div class="nav-footer">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="btn-primary">
+                        Invite Collage
+                    </a>
+                </div>
+            </nav>
+        </aside>
 
-        <h3>Version 1.2.2 - February 25, 2025</h3>
-        <ul>
-            <li>✨ New: Added the new ` -leaktracker` command (Premium feature).</li>
-            <li>⬆️ Improved: Updated bot invite permissions for better security.</li>
-            <li>⬆️ Improved: General bug fixes and performance improvements (the usual).</li>
-        </ul>
-        <hr>
+        <!-- Main Content Area -->
+        <main class="content">
+            
+            <div class="hero-section">
+                <h2>Changelog</h2>
+                <p class="subtitle">Things we changed. Mostly for the better.</p>
+            </div>
 
-        <h3>Version 1.2.1 - February 10, 2025</h3>
-        <ul>
-            <li>⬆️ Improved: Added support for up to 10 images in ` -juicepic`.</li>
-            <li>🔨 Fixed: An issue where ` -ping` showed incorrect latency.</li>
-            <li>⬆️ Improved: Backend optimizations for faster command processing (you're welcome).</li>
-        </ul>
-        <hr>
-    </section>
-</div>
+            <div class="content-wrapper">
+                
+                <div class="alert-box">
+                    <strong>NOTE:</strong> Don't ask us about old features. They are gone for a reason.
+                </div>
 
-<footer>
-    <p>&copy; 2025 collagebot.info. Still better than everything else.</p>
-</footer>
+                <!-- Version 3.0.2 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v3.0.2 <span class="version-badge">Latest</span></h3>
+                        <span class="date-meta">Nov 23, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>💸 The "Freeloader" Update:</strong> We added the <code>ogfile</code> command and finally finished <code>protools</code>. Here is the deal: You get <strong>10 free uses per day</strong>. Once you hit that limit, you have two options: wait 24 hours or buy Premium. We engineered this specifically to annoy you into spending money. It's called business.</li>
+                            <li><strong>🔨 Fixed (Actually):</strong> The <code>cover</code> command. Yes, we said we fixed it in v3.0.1. We were lying. This time, we actually wrote code that works. If it breaks again, it's probably your fault.</li>
+                            <li><strong>⚡ Speed:</strong> We injected aggressive caching into <code>leak</code>, <code>session</code>, <code>remaster</code>, and <code>stem</code>. The bot is now significantly faster than your ability to read.</li>
+                            <li><strong>🌍 Global Domination:</strong> Slash commands now function in <strong>all environments</strong> for User Installs. DMs, Group Chats, servers we aren't even in - we are everywhere now. There is no escape.</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <!-- Version 3.0.1 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v3.0.1</h3>
+                        <span class="date-meta">Nov 18, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>💸 New:</strong> Price command. Crypto lookup by name/symbol. Obsess over your poverty precisely.</li>
+                            <li><strong>⬆️ Improved:</strong> Cover command. Indexed 3,195 new covers. Actually indexed correctly this time.</li>
+                            <li><strong>✨ Lol:</strong> Added 139 new Snippets despite saying we wouldn't. Try using that against us.</li>
+                            <li><strong>🧪 Testing:</strong> Aggressive caching for Snippets. If it doesn't explode, we'll add it to Leaks next.</li>
+                            <li style="margin-top: 15px; border-top: 1px solid var(--border-color); padding-top: 15px;">
+                                <strong style="color: var(--accent);">⭐ Premium Expansion:</strong>
+                                <ul style="margin-top: 8px;">
+                                    <li><strong>🔍 JuicePreview:</strong> Search tracks by snippet/preview date.</li>
+                                    <li><strong>🎧 JuiceEngineer:</strong> Find tracks by specific audio engineer.</li>
+                                    <li><strong>🎶 JuiceProducer:</strong> Find tracks by specific producer.</li>
+                                    <li><strong>📍 JuiceLoc:</strong> Search tracks by recording studio.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 3.0.0 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v3.0.0</h3>
+                        <span class="date-meta">Nov 16, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>🚀 REWRITE:</strong> Entire backend rebuilt for speed and stability. Old code was trash.</li>
+                            <li><strong>📈 Stats:</strong> 109 Servers, 23k Users, 102k Commands, 234GB Data uploaded.</li>
+                            <li><strong>✨ New:</strong> Steal Emoji & Steal Sticker commands added.</li>
+                            <li><strong>✨ New:</strong> JuiceGB (Group Buy tracking), Cover, and Era Info commands.</li>
+                            <li><strong>⬆️ Improved:</strong> Sessions now send files directly (no more external links).</li>
+                            <li><strong>🔨 Fixed:</strong> Major stability patches for outages.</li>
+                            <li><strong>🗑️ Removed:</strong> Snipe/ClearSnipe (Discord intents issue). Snippet updates slowed down.</li>
+                            <li style="margin-top: 15px; border-top: 1px solid var(--border-color); padding-top: 15px;">
+                                <strong style="color: var(--accent);">⭐ Premium Expansion:</strong>
+                                <ul style="margin-top: 8px;">
+                                    <li><strong>✨ Pro Tools:</strong> Leaked session files (GB&GR era).</li>
+                                    <li><strong>✨ New Commands:</strong> Cartileak, Gunnaleak, UziInfo, Repost.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 2.0.3 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v2.0.3</h3>
+                        <span class="date-meta">July 10, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>🔨 Fixed:</strong> <code>leak</code>, <code>ban</code>, <code>jail</code>, <code>unjail</code>, <code>help</code> commands.</li>
+                            <li><strong>✨ New:</strong> Filter moderation system and Warning system.</li>
+                            <li><strong>✨ New:</strong> Jail admin commands (<code>setjailrole</code>, etc).</li>
+                            <li><strong>✨ New:</strong> <code>8ball</code> command. Ask stupid questions.</li>
+                            <li><strong>⬆️ Improved:</strong> UI for <code>remaster</code>, <code>stem</code>, and <code>ui</code> commands.</li>
+                            <li><strong>🗑️ Removed:</strong> <code>sob</code> and <code>skull</code> commands.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.2.7 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v1.2.7</h3>
+                        <span class="date-meta">Apr 4, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>✨ New:</strong> <code>freestyle</code>, <code>era</code>, and <code>grail</code> commands.</li>
+                            <li><strong>⬆️ Improved:</strong> New UI for <code>help</code> command.</li>
+                            <li><strong>⬆️ Improved:</strong> Permission gates for all moderation commands.</li>
+                            <li><strong>🔨 Fixed:</strong> Issues with <code>stem</code> and <code>remaster</code> errors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.2.6 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v1.2.6</h3>
+                        <span class="date-meta">Mar 23, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>✨ New:</strong> <code>producer</code> (Premium), <code>ttt</code> (Last.fm), <code>convert</code> (Premium).</li>
+                            <li><strong>🔨 Fixed:</strong> <code>leak</code> command multi-version search issue.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.2.5 -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>v1.2.5</h3>
+                        <span class="date-meta">Mar 20, 2025</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>✨ Economy:</strong> Full Economy system launched.</li>
+                            <li><strong>✨ New:</strong> <code>uzileak</code> support (Premium) + 42 new snippets.</li>
+                            <li><strong>🔨 Fixed:</strong> <code>snippet</code> unknown errors and error handling improvements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Older Versions Condensed -->
+                <div class="card changelog-list">
+                    <div class="card-header">
+                        <h3>Older Versions</h3>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul>
+                            <li><strong>v1.2.4 (Mar 12):</strong> Last.FM support added. Premium bug fixes.</li>
+                            <li><strong>v1.2.3 (Mar 10):</strong> Added <code>remaster</code> and <code>stem</code>. Faster <code>leak</code> responses.</li>
+                            <li><strong>v1.2.2 (Feb 25):</strong> Added <code>leaktracker</code>. Security updates.</li>
+                            <li><strong>v1.2.1 (Feb 10):</strong> <code>juicepic</code> up to 10 images. Ping fix.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info. Still better than everything else.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

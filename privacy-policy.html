@@ -3,105 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Collage</title>
-    <link rel="stylesheet" href="css/pp.css"> </head>
+    <title>Collage | Privacy Policy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- LINK TO THE SHARED CSS FILE -->
+    <link rel="stylesheet" href="css/docs.css">
+</head>
 <body>
 
-<header>
-    <h1>Collage</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="docs.html">Docs</a>
-        <a href="changelog.html">Changelog</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-service.html">Terms of Service</a>
-        <a href="premium.html">Premium</a>
-    </nav>
-    
-    <div class="header-buttons">
-        <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" class="invite-button" target="_blank">
-            Invite Collage
-        </a>
+    <!-- Layout Wrapper -->
+    <div class="docs-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <a href="premium.html">Premium</a>
+                </div>
+
+                <div class="nav-group">
+                    <p class="nav-header">Links</p>
+                    <a href="privacy-policy.html" class="active">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+
+                <div class="nav-footer">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="btn-primary">
+                        Invite Collage
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            
+            <div class="hero-section">
+                <h2>Privacy Policy</h2>
+                <p class="subtitle">How we collect, use, and protect your information.</p>
+            </div>
+
+            <div class="content-wrapper">
+                
+                <!-- Last Updated Alert -->
+                <div class="alert-box" style="margin-bottom: 40px;">
+                    <strong>Last Updated:</strong> October 24, 2025
+                </div>
+
+                <!-- 1. Introduction -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>1. Introduction</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>Welcome to Collage ("Bot"). This Privacy Policy explains how we ("We," "Our," or "Us") collect, use, and protect your information when you interact with our Services on Discord. By adding our Bot to your server or using its commands, you agree to the collection and use of information in accordance with this policy.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Data Collection -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>2. What Data We Collect and Why</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>We only collect data that is necessary for the Bot to function properly.</p>
+                        
+                        <h5 style="color: #fff; margin-top: 20px; margin-bottom: 10px;">A. Information You Provide Directly</h5>
+                        <ul style="margin-bottom: 20px; padding-left: 20px; color: var(--text-muted);">
+                            <li><strong>Last.fm Username:</strong> When using <code>-fmset</code>, we store your username to connect to the Last.fm API. This is used solely for music features.</li>
+                        </ul>
+
+                        <h5 style="color: #fff; margin-top: 20px; margin-bottom: 10px;">B. Automatic Data (Core Features)</h5>
+                        <ul style="margin-bottom: 20px; padding-left: 20px; color: var(--text-muted);">
+                            <li><strong>IDs:</strong> User IDs, Server (Guild) IDs, and Channel IDs are stored to manage settings, economy, and prevent abuse (blacklists).</li>
+                            <li><strong>Command Usage:</strong> We process executed commands to provide responses. This is not stored long-term.</li>
+                        </ul>
+
+                        <h5 style="color: #fff; margin-top: 20px; margin-bottom: 10px;">C. Special Data (Privileged Intents)</h5>
+                        <ul style="padding-left: 20px; color: var(--text-muted);">
+                            <li style="margin-bottom: 10px;"><strong>Snipe Command:</strong> Stores the content/author/timestamp of the most recently deleted message temporarily (RAM only). It is overwritten by new deletions or deleted automatically after ~10 minutes.</li>
+                            <li><strong>Leveling System:</strong> We process message content to award XP and prevent spam. We <strong>do not store</strong> message content for this feature. You can opt-out via <code>-xpoptout</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. Storage -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>3. Data Storage and Retention</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <ul style="padding-left: 20px; color: var(--text-muted);">
+                            <li><strong>User Data (Last.fm, Levels):</strong> Stored until you request deletion.</li>
+                            <li><strong>Snipe Data:</strong> Temporary (RAM only), not stored in a persistent database.</li>
+                            <li><strong>Server Configs:</strong> Stored as long as the Bot remains in the server.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Sharing -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>4. Data Sharing and Disclosure</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>We do not sell, trade, or share your personal information with third parties for marketing. We only disclose information if required by law or to comply with legal obligations.</p>
+                    </div>
+                </div>
+
+                <!-- 5. User Rights -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>5. Your Rights and Control</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>You have full control over your data:</p>
+                        <ul style="padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                            <li><strong>Right to Access:</strong> Request a copy of data stored about you.</li>
+                            <li><strong>Right to Deletion:</strong> Request deletion of specific data (Last.fm, leveling progress).</li>
+                            <li><strong>Right to Opt-Out:</strong> Use <code>-xpoptout</code> to disable leveling tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6. Age -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>6. Age Restrictions</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>Our Services are not directed to children under 13. We do not knowingly collect data from anyone under 13. If we discover such data has been collected, we will take immediate steps to remove it.</p>
+                    </div>
+                </div>
+
+                <!-- 7 & 8 Security & Changes -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>7. Security & Changes</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p><strong>Security:</strong> We implement industry-standard measures to prevent unauthorized access or alteration of your data.</p>
+                        <hr style="margin: 20px 0; border-color: rgba(255,255,255,0.05);">
+                        <p><strong>Updates:</strong> We may update this policy. Significant changes will be posted here or announced in our support server.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Contact -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>9. Contact Us</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>For questions or data requests, contact us via:</p>
+                        <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;">📧 <strong>Email:</strong> commitarson@representative.com</li>
+                            <li style="margin-bottom: 8px;">🔹 <a href="https://discord.gg/wotp" target="_blank">Support Server</a></li>
+                            <li style="margin-bottom: 8px;">👤 <strong>Developers:</strong> <code>xbox360s</code>, <code>ihavemaxauraa</code>, <code>houndswrldd</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info. We collect data. Don't worry about it.</p>
+                </footer>
+            </div>
+        </main>
     </div>
-</header>
 
-<div class="container">
-    <h2>Privacy Policy for Collage</h2>
-    <p><strong>Last Updated:</strong> October 24, 2025</p>
-    <hr>
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
 
-    <h3>1. Introduction</h3>
-    <p>Welcome to Collage ("Bot"). This Privacy Policy explains how we ("We," "Our," or "Us") collect, use, and protect your information when you interact with our Services on Discord. By adding our Bot to your server or using its commands, you agree to the collection and use of information in accordance with this policy.</p>
-    <hr>
-
-    <h3>2. What Data We Collect and Why</h3>
-    <p>We only collect data that is necessary for the Bot to function properly and provide its features.</p>
-
-    <h4>A. Information You Provide Directly</h4>
-    <ul>
-        <li><strong>Last.fm Username:</strong> When you use the <code>-fmset</code> command, you provide your Last.fm username. We store this username to connect to the Last.fm API and provide you with music-related features. This data is used solely for this purpose.</li>
-    </ul>
-
-    <h4>B. Information Collected Automatically for Core Features</h4>
-    <ul>
-        <li><strong>User IDs, Server (Guild) IDs, and Channel IDs:</strong> We store these Discord-provided IDs to manage core functionalities. This includes saving user-specific data for our leveling and economy systems, remembering server-specific settings, and preventing abuse by blacklisting users or servers where necessary.</li>
-        <li><strong>Commands You Use:</strong> We process the commands you run to provide the Bot's services. This data is not stored long-term, but it is necessary for the Bot to respond to you.</li>
-    </ul>
-
-    <h4>C. Special Data Categories (Related to Privileged Intents)</h4>
-    <p>To provide specific, advanced features, we require Privileged Intents, which allow us to access additional information as described below:</p>
-    <ul>
-        <li><strong>Message Content for the Snipe Command:</strong> To enable the <code>-snipe</code> command, the Bot temporarily stores the content, author, and timestamp of the most recently deleted message in a channel. This data is stored in the Bot's temporary memory (not in a permanent database) and is automatically overwritten when a new message is deleted in that channel, or after a short period (typically under 10 minutes), whichever comes first. This is a moderation feature for transparency and context.</li>
-        <li><strong>Message Content for the Leveling System:</strong> To ensure a fair and engaging leveling system, the Bot processes message content to award experience (XP) based on activity, which helps prevent spam. We <strong>do not store the content of your messages</strong> for this feature. We only perform a real-time, non-sensitive analysis (e.g., checking the message length). You have full control and can opt-out of the leveling system at any time using the <code>-xpoptout</code> command.</li>
-    </ul>
-    <hr>
-
-    <h3>3. Data Storage and Retention</h3>
-    <ul>
-        <li><strong>User-Provided Data (Last.fm, Levels):</strong> This data is stored until you request its deletion.</li>
-        <li><strong>Snipe Data:</strong> As stated above, this data is temporary and is not stored in a long-term database.</li>
-        <li><strong>Server Configurations:</strong> Settings data is stored as long as the Bot remains in the server.</li>
-    </ul>
-    <hr>
-
-    <h3>4. Data Sharing and Disclosure</h3>
-    <p>We do not sell, trade, or share your personal information with any third parties for marketing or commercial purposes. We may only disclose your information if required to do so by law or in the good-faith belief that such action is necessary to comply with a legal obligation.</p>
-    <hr>
-
-    <h3>5. Your Rights and Control Over Your Data</h3>
-    <p>You have control over your data.</p>
-    <ul>
-        <li><strong>Right to Access:</strong> You can request a copy of the data we have stored about you.</li>
-        <li><strong>Right to Deletion:</strong> You have the right to request the deletion of your user-specific data (like your Last.fm username and leveling progress) at any time.</li>
-        <li><strong>Right to Opt-Out:</strong> You can opt-out of the XP/leveling system at any time using the <code>-xpoptout</code> command.</li>
-    </ul>
-    <p>To exercise these rights, please contact us using the methods provided in Section 9.</p>
-    <hr>
-
-    <h3>6. Age Restrictions</h3>
-    <p>Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and you believe your child has provided us with personal data, please contact us. If we become aware that we have collected data from a child under 13, we will take immediate steps to remove that information.</p>
-    <hr>
-
-    <h3>7. Data Security</h3>
-    <p>We are committed to protecting your information. We implement reasonable and industry-standard security measures to prevent unauthorized access, use, or alteration of your data.</p>
-    <hr>
-
-    <h3>8. Changes to This Privacy Policy</h3>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on this page and/or through an announcement in our support server. You are advised to review this Privacy Policy periodically for any changes.</p>
-    <hr>
-
-    <h3>9. Contact Us</h3>
-    <p>If you have any questions, concerns, or requests regarding your data or this Privacy Policy, please contact us:</p>
-    <ul>
-        <li><strong>Email:</strong> commitarson@representative.com</li>
-        <li><strong>Support Server:</strong> https://discord.gg/wotp</li>
-        <li><strong>Team Members:</strong> You can send a direct message to <code>xbox360s</code>, <code>ihavemaxauraa</code>, or <code>houndswrldd</code> in our support server.</li>
-    </ul>
-</div>
-
-<footer>
-    <p>&copy; 2025 collagebot.info. We collect data. Don't worry about it.</p>
-</footer>
-
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

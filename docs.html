@@ -3,673 +3,739 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docs</title>
+    <title>Collage | Documentation</title>
     
-    <link rel="stylesheet" href="css/docs.css"> <style>
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .command-category {
-            background-color: #181616; /* Light background for each category block */
-            border: 1px solid #252323;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .command-category h4 {
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #383838;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #251f1f;
-        }
-        code {
-            background-color: #252323;
-            padding: 2px 5px;
-            border-radius: 4px;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #ffffff;
-            margin: 20px 0;
-        }
-    </style>
+    <!-- Google Fonts: Inter for UI, JetBrains Mono for Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
 
-    <header>
-        <h1>Documentation</h1>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="docs.html">Docs</a>
-            <a href="changelog.html">Changelog</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-            <a href="premium.html">Premium</a>
-        </nav>
-    
-        <div class="additional-nav">
-            <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="invite-button">
-                <img src="images/discord-logo.png" alt="Discord Logo" class="discord-logo"> Invite Collage
-            </a>
-    
-            <div class="dropdown">
-                <button class="dropbtn">Documentation</button>
-                <div class="dropdown-content">
-                    <a href="#introduction">Introduction</a>
-                    <a href="#how-to-use">How to Use</a>
-                    <a href="#commands-moderation">Moderation & Utility</a>
-                    <a href="#commands-lastfm">Last.fm Commands</a>
-                    <a href="#commands-music">Music Commands</a>
-                    <a href="#commands-economy">Economy Commands</a>
-                    <a href="#commands-grail">Grail Commands</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#support">Support</a>
-                </div>
+    <!-- Layout Wrapper -->
+    <div class="docs-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
             </div>
-        </div>
-    </header>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html" class="active">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <a href="premium.html">Premium</a>
+                </div>
 
-<div class="container">
-    <h2>Stop Wasting Our Time.</h2>
-    <p>This is the Documentation. An inconvenience, we know, but necessary to keep pace with Collage. We built the most capable bot available; your job is to run it flawlessly. This page details the commands and technical parameters. Read it, execute it, and avoid the support channel entirely. We will clown you if the answer to your question is here.</p>
+                <div class="nav-group">
+                    <p class="nav-header">Categories</p>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#commands-premium">⭐ Premium</a>
+                    <a href="#commands-Artist">Artist</a>
+                    <a href="#commands-moderation">Moderation</a>
+                    <a href="#commands-server">Server</a>
+                    <a href="#commands-fun">Fun</a>
+                    <a href="#commands-economy">Economy</a>
+                    <a href="#commands-Last.fm">Last.fm</a>
+                    <a href="#faq">FAQ</a>
+                </div>
 
-    <section id="introduction">
-        <h3>Introduction</h3>
-        <p>Collage is the only Discord bot you need. It handles music stuff and server moderation because we couldn't be bothered to make two bots. We took premium features, stuffed them into this thing, and made it free. Why? Because we can. Get to tracking your music collection and using features you don't deserve.</p>
-        <hr>
-        
-        <blockquote class="development-note">
-            <strong>ATTENTION IDIOTS:</strong> Yes, Collage is in active development. That means things change. Often. Don't complain when a command breaks; we're making it better. You're just a beta tester who pays nothing. Adapt.
-        </blockquote>
-        <hr>
-    </section>
-    
-    <section id="how-to-use">
-        <h3>How to Use (The Simple Part)</h3>
-        <p>If you need instructions for these three simple steps, maybe Discord isn't for you. But fine, here they are:</p>
-        <ol>
-            <li>Go click the button in the header. (Yes, the one that says 'Invite').</li>
-            <li>Use the highly complex and super intelligent <code>@collage</code> command prefix to access features.</li>
-            <li>Type <code>@collage help</code> if you immediately forget everything you just read.</li>
-        </ol>
-        <hr>
-    </section>
+                <div class="nav-footer">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="btn-primary">
+                        Invite Collage
+                    </a>
+                </div>
+            </nav>
+        </aside>
 
+        <!-- Main Content Area -->
+        <main class="content">
+            
+            <div class="hero-section">
+                <h2>Stop Wasting Our Time.</h2>
+                <p class="subtitle">Read the manual. Execute the commands. Don't ask questions.</p>
+            </div>
 
+            <div class="content-wrapper">
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p>Collage is the only Discord bot you need. It handles music stuff and server moderation because we couldn't be bothered to make two bots. We took premium features, stuffed them into this thing, and made it free. Why? Because we can. Get to tracking your music collection and using features you don't deserve.</p>
+                    
+                    <div class="alert-box">
+                        <strong>ATTENTION IDIOTS:</strong> Yes, Collage is in active development. That means things change. Often. Don't complain when a command breaks; we're making it better. You're just a beta tester who pays nothing. Adapt.
+                    </div>
+                </section>
 
+                <hr>
 
+                <section id="how-to-use">
+                    <h3>How to Use</h3>
+                    <ol class="steps-list">
+                        <li>Go click the button in the sidebar. (Yes, the one that says 'Invite').</li>
+                        <li>Use the command prefix <code>@collage</code> to access features.</li>
+                        <li>Type <code>@collage help</code> if you immediately forget everything you just read.</li>
+                    </ol>
+                </section>
 
+                <hr>
 
+<!-- Commands Index Header -->
+                <div class="section-header">
+                    <h3>Commands Index</h3>
+                    <p>Below is the complete list of technical parameters.</p>
+                </div>
 
-    <section id="commands">
-    <h3>Commands</h3>
+                <!-- PREMIUM COMMANDS -->
+                <div id="commands-premium" class="card">
+                    <div class="card-header">
+                        <h4>⭐ Premium Commands</h4>
+                        <span class="badge premium">Paid</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="25%">Command</th>
+                                    <th width="40%">Description</th>
+                                    <th width="35%">Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>yt2mp3</code></td>
+                                    <td>Convert any Youtube link into a MP3 file.</td>
+                                    <td><code>@collage yt2mp3 (link)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>repost</code></td>
+                                    <td>Reposts Instagram, Tiktok, or Twitter videos.</td>
+                                    <td><code>@collage repost (link)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>comp</code></td>
+                                    <td>Get a comp from Juice WRLD, Uzi, Gunna, Carti.</td>
+                                    <td><code>@collage comp</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>date</code></td>
+                                    <td>Provides all leaks on a specified date.</td>
+                                    <td><code>@collage date 8/22/24</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceproducer</code></td>
+                                    <td>All Juice WRLD tracks by a specific producer.</td>
+                                    <td><code>@collage juiceproducer nick mira</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>leaktracker</code></td>
+                                    <td>Sends all dated leaks to the user.</td>
+                                    <td><code>@collage leaktracker</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>protools</code></td>
+                                    <td>Get any leaked Juice WRLD Pro Tools session.</td>
+                                    <td><code>@collage protools I Hate Her Friends</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>uzileak</code></td>
+                                    <td>Get any leaked song from Lil Uzi Vert.</td>
+                                    <td><code>@collage uzileak daytona</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>uziinfo</code></td>
+                                    <td>Provides all known info on a Lil Uzi Vert song.</td>
+                                    <td><code>@collage uziinfo richard millie</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cartileak</code></td>
+                                    <td>Get any leaked song from Playboi Carti.</td>
+                                    <td><code>@collage cartileak vivienne westwood</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>gunnaleak</code></td>
+                                    <td>Get any leaked song from Gunna.</td>
+                                    <td><code>@collage gunnaleak friday</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juicepreview</code></td>
+                                    <td>Find all songs previewed on a specific date.</td>
+                                    <td><code>@collage juicepreview april 14 2018</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceengineer</code></td>
+                                    <td>Find all tracks made by a specific engineer.</td>
+                                    <td><code>@collage juiceengineer Jcraig</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceloc</code></td>
+                                    <td>Find all tracks recorded at a specific studio.</td>
+                                    <td><code>@collage juiceloc Glass Tree</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
+                <!-- ARTIST COMMANDS -->
+                <div id="commands-Artist" class="card">
+                    <div class="card-header">
+                        <h4>Artist Commands</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>leak</code></td>
+                                    <td>Provides song file and information for a song.</td>
+                                    <td><code>@collage leak rental</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>snippet</code></td>
+                                    <td>Provides known snippets of a provided song.</td>
+                                    <td><code>@collage snip k like a russian</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>sotd</code></td>
+                                    <td>Sends a randomly picked Juice WRLD song each day.</td>
+                                    <td><code>@collage sotd</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juiceinfo</code></td>
+                                    <td>Provides all known information on a Juice WRLD song.</td>
+                                    <td><code>@collage juiceinfo push me away</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juicegb</code></td>
+                                    <td>Provides information on any past Juice WRLD group buy.</td>
+                                    <td><code>@collage juicegb call me whenever</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juicepic</code></td>
+                                    <td>Provides up to 10 random pictures of Juice WRLD.</td>
+                                    <td><code>@collage juicepic 6</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>session</code></td>
+                                    <td>Provides a session edit for a specified song.</td>
+                                    <td><code>@collage session nintendo</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>listallsessions</code></td>
+                                    <td>Provides a list of all leaked session edits.</td>
+                                    <td><code>@collage listallsessions</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>juicegif</code></td>
+                                    <td>Provides up to 10 random GIFs of Juice WRLD.</td>
+                                    <td><code>@collage juicegif 7</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>stem</code></td>
+                                    <td>Provides a specified stem.</td>
+                                    <td><code>@collage stem violence</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>remaster</code></td>
+                                    <td>Provides a specified remaster.</td>
+                                    <td><code>@collage remaster timezone</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>freestyle</code></td>
+                                    <td>Get any studio recorded freestyle from Juice WRLD.</td>
+                                    <td><code>@collage freestyle Japan</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>erainfo</code></td>
+                                    <td>Get information on a specified era.</td>
+                                    <td><code>@collage erainfo goodbye & good riddance</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cover</code></td>
+                                    <td>Provides covers for a specified song or album.</td>
+                                    <td><code>@collage cover death race for love</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail</code></td>
+                                    <td>View your or another persons grail list.</td>
+                                    <td><code>@collage grail @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail add</code></td>
+                                    <td>Add a song to your grail list.</td>
+                                    <td><code>@collage grail add Benjamin</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail clear</code></td>
+                                    <td>Clear your grail list.</td>
+                                    <td><code>@collage grail clear</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail update</code></td>
+                                    <td>Update your grail list.</td>
+                                    <td><code>@collage grail update My Year</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail gifadd</code></td>
+                                    <td>Add your own GIF to your grail list thumbnail.</td>
+                                    <td><code>@collage grail gifadd (link)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>grail gifremove</code></td>
+                                    <td>Remove your GIF from your grail list.</td>
+                                    <td><code>@collage grail gifremove</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
+                <!-- MODERATION COMMANDS -->
+                <div id="commands-moderation" class="card">
+                    <div class="card-header">
+                        <h4>Moderation & Utility</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>ban</code></td>
+                                    <td>Ban a user from the server.</td>
+                                    <td><code>@collage ban @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>unban</code></td>
+                                    <td>Unban a user from the server via user ID.</td>
+                                    <td><code>@collage unban (ID)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>kick</code></td>
+                                    <td>Kick a user from the server.</td>
+                                    <td><code>@collage kick @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lock</code></td>
+                                    <td>Locks the current channel.</td>
+                                    <td><code>@collage lock</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>unlock</code></td>
+                                    <td>Unlocks the current channel.</td>
+                                    <td><code>@collage unlock</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>jailrole</code></td>
+                                    <td>Set your jail role by role ID.</td>
+                                    <td><code>@collage jailrole (ID)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>jail</code></td>
+                                    <td>Jail a user.</td>
+                                    <td><code>@collage jail @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>unjail</code></td>
+                                    <td>Unjail a user.</td>
+                                    <td><code>@collage unjail @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>purge</code></td>
+                                    <td>Deletes a specified amount of messages.</td>
+                                    <td><code>@collage purge 99</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>qp</code></td>
+                                    <td>Creates a poll on your message.</td>
+                                    <td><code>@collage qp am i cool</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-    <div id="commands-premium" class="command-category">
-        <h4>⭐ Premium Commands ⭐</h4>
-        <table>
-            <tr>
-                <td>@collage yt2mp3</td>
-                <td>Convert any Youtube link into a MP3 file.</td>
-                <td><code>@collage yt2mp3 (youtube link)</code></td>
-            </tr>
-            <tr>
-                <td>@collage repost</td>
-                <td>Reposts any Instagram, Tiktok, or Twitter video into the chat.</td>
-                <td><code>@collage repost (link)</code></td>
-            </tr>
-            <tr>
-                <td>@collage comp</td>
-                <td>Get a comp from Juice WRLD, Lil Uzi Vert, Gunna, and Playboi Carti.</td>
-                <td><code>@collage comp</code></td>
-            </tr>
-            <tr>
-                <td>@collage date</td>
-                <td>Provides all leaks on a specified date.</td>
-                <td><code>@collage date 8/22/24</code></td>
-            </tr>
-            <tr>
-                <td>@collage juiceproducer</td>
-                <td>Provides all Juice WRLD tracks made by a specific producer.</td>
-                <td><code>@collage juiceproducer nick mira</code></td>
-            </tr>
-            <tr>
-                <td>@collage leaktracker</td>
-                <td>Sends all dated leaks to the user.</td>
-                <td><code>@collage leaktracker</code></td>
-            </tr>
-            <tr>
-                <td>@collage protools</td>
-                <td>Get any leaked Juice WRLD Pro Tools session.</td>
-                <td><code>@collage protools I Hate Her Friends</code></td>
-            </tr>
-            <tr>
-                <td>@collage uzileak</td>
-                <td>Get any leaked song from Lil Uzi Vert.</td>
-                <td><code>@collage uzileak daytona</code></td>
-            </tr>
-            <tr>
-                <td>@collage uziinfo</td>
-                <td>Provides all known information on a Lil Uzi Vert song.</td>
-                <td><code>@collage uziinfo richard millie</code></td>
-            </tr>
-            <tr>
-                <td>@collage cartileak</td>
-                <td>Get any leaked song from Playboi Carti.</td>
-                <td><code>@collage cartileak vivienne westwood</code></td>
-            </tr>
-            <tr>
-                <td>@collage gunnaleak</td>
-                <td>Get any leaked song from Gunna.</td>
-                <td><code>@collage gunnaleak friday</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicepreview</td>
-                <td>Find all songs previewed on a specific date.</td>
-                <td><code>@collage juicepreview april 14 2018</code></td>
-            </tr>
-            <tr>
-                <td>@collage juiceengineer</td>
-                <td>Find all tracks made by a specific engineer.</td>
-                <td><code>@collage juiceengineer Jcraig</code></td>
-            </tr>
-            <tr>
-                <td>@collage juiceloc</td>
-                <td>Find all tracks recorded at a specific recording studio.</td>
-                <td><code>@collage juiceloc Glass Tree</code></td>
-            </tr>
+                <!-- SERVER UTILITIES -->
+                <div id="commands-server" class="card">
+                    <div class="card-header">
+                        <h4>Server Utilities</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>br config role</code></td>
+                                    <td>Config booster role ID for custom roles.</td>
+                                    <td><code>@collage br config role (ID)</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br create</code></td>
+                                    <td>Create a custom booster role.</td>
+                                    <td><code>@collage br create</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br name</code></td>
+                                    <td>Name your custom booster role.</td>
+                                    <td><code>@collage br name Cool Name</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br color</code></td>
+                                    <td>Change the color of your booster role via hex.</td>
+                                    <td><code>@collage br color #00ff00</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>credits</code></td>
+                                    <td>Lists project contributors.</td>
+                                    <td><code>@collage credits</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>embed</code></td>
+                                    <td>Create a highly customizable embed.</td>
+                                    <td><code>@collage embed</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>help</code></td>
+                                    <td>View the bot's help menu.</td>
+                                    <td><code>@collage help</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>privacy</code></td>
+                                    <td>View the privacy policy.</td>
+                                    <td><code>@collage privacy</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>rr</code></td>
+                                    <td>Create a custom reaction role message.</td>
+                                    <td><code>@collage rr</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ping</code></td>
+                                    <td>Show bot's ping and stats.</td>
+                                    <td><code>@collage ping</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>av</code></td>
+                                    <td>View your own or another user's avatar.</td>
+                                    <td><code>@collage av @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>search</code></td>
+                                    <td>Search for information on a command.</td>
+                                    <td><code>@collage search juiceinfo</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ui</code></td>
+                                    <td>Show user information/account details.</td>
+                                    <td><code>@collage ui @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>bc</code></td>
+                                    <td>Clear the bot's sent messages.</td>
+                                    <td><code>@collage bc</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>si</code></td>
+                                    <td>Show detailed server information.</td>
+                                    <td><code>@collage si</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-        </table>
+                <!-- FUN COMMANDS -->
+                <div id="commands-fun" class="card">
+                    <div class="card-header">
+                        <h4>Fun</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>price</code></td>
+                                    <td>Get detailed statistics of a cryptocurrency.</td>
+                                    <td><code>@collage price bitcoin</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>8ball</code></td>
+                                    <td>Get an answer from the magic 8 ball.</td>
+                                    <td><code>@collage 8ball question</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>smoke</code></td>
+                                    <td>No description available.</td>
+                                    <td><code>@collage smoke vape</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ECONOMY COMMANDS -->
+                <div id="commands-economy" class="card">
+                    <div class="card-header">
+                        <h4>Economy & Games</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>daily</code></td>
+                                    <td>Claim your daily amount of coins.</td>
+                                    <td><code>@collage daily</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>weekly</code></td>
+                                    <td>Claim your weekly amount of coins.</td>
+                                    <td><code>@collage weekly</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>monthly</code></td>
+                                    <td>Claim your monthly amount of coins.</td>
+                                    <td><code>@collage monthly</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>beg</code></td>
+                                    <td>Test your luck and beg for some coins.</td>
+                                    <td><code>@collage beg</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>balance</code></td>
+                                    <td>Check your wallet and bank account balance.</td>
+                                    <td><code>@collage balance</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>deposit</code></td>
+                                    <td>Deposit coins into your bank.</td>
+                                    <td><code>@collage deposit 999</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>withdraw</code></td>
+                                    <td>Withdraw coins from your bank.</td>
+                                    <td><code>@collage withdraw 5832</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>blackjack</code></td>
+                                    <td>Play a game of blackjack.</td>
+                                    <td><code>@collage blackjack 5000</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>gamble</code></td>
+                                    <td>Test your luck (50/50 chance).</td>
+                                    <td><code>@collage gamble 50000</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- LAST.FM COMMANDS -->
+                <div id="commands-Last.fm" class="card">
+                    <div class="card-header">
+                        <h4>Last.fm Commands</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>fmset</code></td>
+                                    <td>Set your Last.fm username with the bot.</td>
+                                    <td><code>@collage fmset xignotic</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>fm</code></td>
+                                    <td>Fetch your currently playing track.</td>
+                                    <td><code>@collage fm</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ttt</code></td>
+                                    <td>Display your top ten tracks.</td>
+                                    <td><code>@collage ttt</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>rt</code></td>
+                                    <td>Display your 10 most recent played tracks.</td>
+                                    <td><code>@collage rt</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ta</code></td>
+                                    <td>Display your top artists.</td>
+                                    <td><code>@collage ta</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <hr>
+
+                <section id="faq">
+                    <h3>FAQ: Questions We Should Never Have To Answer</h3>
+                    
+                    <div class="faq-grid">
+                        <!-- Q1 -->
+                        <div class="faq-item">
+                            <p class="question">Q: How do I invite the bot? Are you blind?</p>
+                            <p class="answer">A: Click the "Invite Collage" button located in the sidebar. If you missed it, look left.</p>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="faq-item">
+                            <p class="question">Q: I found an issue. How do I report a bug?</p>
+                            <p class="answer">A: Join the official <a href="https://discord.gg/wotp" target="_blank">Discord Server</a> and use the designated #bug-reports channel. Provide context; we don't guess.</p>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why did the command I ran fail/stop working?</p>
+                            <p class="answer">A: It's either a temporary Discord API hiccup, you typed it wrong (99% likely), or we're fixing something critical and you decided to run the exact command we were working on. Try again in 30 seconds. If it's still broken, see the bug report instructions above. Stop pinging me and hounds. I don't want to talk to you.</p>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Is this bot free?</p>
+                            <p class="answer">A: Yes. The bot's core functionality is completely free. We do, however, offer <span style="color: var(--accent); font-weight:bold;">⭐ Premium</span> features because running this complex infrastructure costs money. You want thousands of indexed files and high uptime? Pay up or shut up. Your choice.</p>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why does the documentation read like a direct personal insult?</p>
+                            <p class="answer">A: Because reading is a <strong>privilege</strong>, not a right. We spent time coding this monster. You spend five minutes reading the manual. We get to control the narrative. You get to stop asking obvious questions. Seems like a fair trade to us, moron.</p>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="faq-item">
+                            <p class="question">Q: I used a command and it returned an error about a database connection. Should I panic?</p>
+                            <p class="answer">A: Yes. Panic. Then remember that our database is larger than your entire music collection and sometimes needs a break. We get trillions of requests. Give it 10 seconds. If the command still doesn't work, it's actually broken, but your complaining won't fix the server rack. Report it once and go do something useful.</p>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="faq-item">
+                            <p class="question">Q: I'm a developer. Can I contribute to this project?</p>
+                            <p class="answer">A: Are you serious? The complexity of our codebase would melt your entry-level laptop. This isn't some quick python script; this is a finely tuned machine. If you want to contribute, send us a massive server donation. Otherwise, stick to cloning repositories with 'Hello World' examples. (If you're serious, dm <code>@xbox360s</code>)</p>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Where do you get all this data/files? Is it even accurate?</p>
+                            <p class="answer">A: We don't ask, and you don't need to know. The files are here. The metadata is cross-referenced by a team of obsessive music nerds. If you think something is wrong, you are wrong. Our data is superior. Use it and be grateful.</p>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why is this bot so focused on Juice WRLD, Lil Uzi Vert, etc.?</p>
+                            <p class="answer">A: Because they have the most leaks, and therefore, they are the best use of our server resources. We serve the demand. If your obscure indie artist had 10,000 unreleased files, we'd build a database for them, too. They don't. So stop asking and listen to a real artist.</p>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why can't I play music/use music commands? Did you break them?</p>
+                            <p class="answer">A: No, you broke them. Discord restricted music bots because people like you couldn't follow rules. We removed the old music functions because we prefer not being sued. If you want music, use the specialized artist commands or go pay for Spotify like a normal person.</p>
+                        </div>
+
+                        <!-- Q12 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why is the bot not showing the latest leaks? Am I using the wrong command?</p>
+                            <p class="answer">A: You are probably using the wrong command, yes. But more importantly, our infrastructure takes a moment to process the sheer volume of content being dumped daily. We are constantly updating the database. If it's not here, it's either not leaked, or we haven't certified the file yet. Calm down and check back later, loser. Tried the stem command yet? You probably should. Autograph V2 is not a real song, idiot.</p>
+                        </div>
+
+                        <!-- Q13 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Are you adding support for [Insert Random Rapper Here]?</p>
+                            <p class="answer">A: Maybe. Our roadmap is sacred and classified. If they have an extensive leak history, a dedicated community, and a massive body of work, they're probably on the list. If they dropped one mixtape last year, go use a search engine. Now go look at the <span style="color: var(--accent); font-weight:bold;">⭐ Premium</span> section; that's who we're focusing on.</p>
+                        </div>
+
+                        <!-- Q14 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Why are there so many commands? It's overwhelming.</p>
+                            <p class="answer">A: That's not a question; it's a confession of weakness. We have over 70 commands because we provide unparalleled utility. If you can't handle it, maybe go back to the bots that only do cat pictures. The <code>@collage help</code> command exists for a reason, moron.</p>
+                        </div>
+
+                        <!-- Q15 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Will you ever open-source the code?</p>
+                            <p class="answer">A: Whenever we feel like it. We're not giving you a roadmap. If the content stream ever slows down—say, when the Juice WRLD material finally stops getting posted maybe we'll consider it. Until then, our code is locked down. Stay tuned... or don't. We don't care.</p>
+                        </div>
+
+                        <!-- Q16 -->
+                        <div class="faq-item">
+                            <p class="question">Q: I want to be a Staff/Mod/Helper. How do I apply?</p>
+                            <p class="answer">A: We don't accept applications. If you're useful, we notice you. If you're just asking for power, we already blocked your DMs. Focus on contributing valuable information, not farming roles. You'll hear from us when we need you (i.e., probably never).</p>
+                        </div>
+
+                        <!-- Q17 -->
+                        <div class="faq-item">
+                            <p class="question">Q: The bot is slow right now! What gives?</p>
+                            <p class="answer">A: Check the annoucements channel in the Discord server first. If we're not actively melting down, it means hundreds of other users are running resource-intensive commands simultaneously. Your patience is required. We are fast, but we're not magic. Yet.</p>
+                        </div>
+
+                        <!-- Q18 -->
+                        <div class="faq-item">
+                            <p class="question">Q: Can you add a feature that does [insert feature that only benefits you]?</p>
+                            <p class="answer">A: Our feature list is driven by community demand and developer interest. If you want a niche tool that only you will use, learn Python. If it's a genuinely good idea that benefits everyone, ping us about it in general. If it's stupid, we'll ignore it.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="support">
+                    <div class="support-box">
+                        <h3>Support: Last Resort</h3>
+                        <p>If you absolutely must annoy us, join the <a href="https://discord.gg/wotp">Support Server</a>.</p>
+                        <p class="subtext">Email: commitarson@representative.com (Expect slow replies)</p>
+                    </div>
+                </section>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info. Still better than everything else.</p>
+                </footer>
+            </div>
+        </main>
     </div>
-
-
-    <div id="commands-Artist" class="command-category">
-        <h4>Artist Commands</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage leak</td>
-                <td>Provides song file and information for a song.</td>
-                <td><code>@collage leak rental</code></td>
-            </tr>
-            <tr>
-                <td>@collage snippet</td>
-                <td>Provides known snippets of a provided song.</td>
-                <td><code>@collage snip k like a russian</code></td>
-            </tr>
-            <tr>
-                <td>@collage sotd</td>
-                <td>Sends a randomly picked Juice WRLD song each day.</td>
-                <td><code>@collage sotd</code></td>
-            </tr>
-            <tr>
-                <td>@collage juiceinfo</td>
-                <td>Provides all known information on a Juice WRLD song.</td>
-                <td><code>@collage juiceinfo push me away</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicegb</td>
-                <td>Provides information on any past Juice WRLD group buy.</td>
-                <td><code>@collage juicegb call me whenever</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicepic</td>
-                <td>Provides up to 10 random pictures of Juice WRLD.</td>
-                <td><code>@collage juicepic 6</code></td>
-            </tr>
-            <tr>
-                <td>@collage session</td>
-                <td>Provides a session edit for a specified song, if available.</td>
-                <td><code>@collage session nintendo</code></td>
-            </tr>
-            <tr>
-                <td>@collage listallsessions</td>
-                <td>Provides a list of all leaked session edits.</td>
-                <td><code>@collage listallsessions</code></td>
-            </tr>
-            <tr>
-                <td>@collage juicegif</td>
-                <td>Provides up to 10 random GIFs of Juice WRLD.</td>
-                <td><code>@collage juicegif 7</code></td>
-            </tr>
-            <tr>
-                <td>@collage stem</td>
-                <td>Provides a specified stem.</td>
-                <td><code>@collage stem violence</code></td>
-            </tr>
-            <tr>
-                <td>@collage remaster</td>
-                <td>Provides a specified remaster.</td>
-                <td><code>@collage remaster timezone</code></td>
-            </tr>
-            <tr>
-                <td>@collage freestyle</td>
-                <td>Get any studio recorded freestyle from Juice WRLD.</td>
-                <td><code>@collage freestyle Japan</code></td>
-            </tr>
-            <tr>
-                <td>@collage erainfo</td>
-                <td>Get information on a specified era.</td>
-                <td><code>@collage erainfo goodbye & good riddance</code></td>
-            </tr>
-            <tr>
-                <td>@collage cover</td>
-                <td>Provides one (or multiple) covers for a specified song or album.</td>
-                <td><code>@collage cover death race for love</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail</td>
-                <td>View your or another persons grail list.</td>
-                <td><code>@collage grail @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail add</td>
-                <td>Add a song to your grail list.</td>
-                <td><code>@collage grail add Benjamin</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail clear</td>
-                <td>Clear your grail list.</td>
-                <td><code>@collage grail clear</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail update</td>
-                <td>Update your grail list.</td>
-                <td><code>@collage grail update My Year</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail gifadd</td>
-                <td>Add your own GIF to your grail list thumbnail embed.</td>
-                <td><code>@collage grail gifadd (gif link here)</code></td>
-            </tr>
-            <tr>
-                <td>@collage grail gifremove</td>
-                <td>Remove your GIF from your grail list.</td>
-                <td><code>@collage grail gifremove</code></td>
-            </tr>
-
-        </table>
-    </div>
-
-    <div id="commands-moderation" class="command-category">
-        <h4>Moderation &amp; Utility</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage ban</td>
-                <td>Ban a user from the server.</td>
-                <td><code>@collage ban @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage unban</td>
-                <td>Unban a user from the server via user ID.</td>
-                <td><code>@collage unban 715354423706124359</code></td>
-            </tr>
-            <tr>
-                <td>@collage kick</td>
-                <td>Kick a user from the server.</td>
-                <td><code>@collage kick @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage lock</td>
-                <td>Locks the current channel.</td>
-                <td><code>@collage lock</code></td>
-            </tr>
-            <tr>
-                <td>@collage unlock</td>
-                <td>Unlocks the current channel.</td>
-                <td><code>@collage unlock</code></td>
-            </tr>
-            <tr>
-                <td>@collage jailrole</td>
-                <td>Set your jail role by role ID.</td>
-                <td><code>@collage jailrole 1424062519806398636</code></td>
-            </tr>
-            <tr>
-                <td>@collage jail</td>
-                <td>Jail a user.</td>
-                <td><code>@collage jail @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage unjail</td>
-                <td>Unjail a user.</td>
-                <td><code>@collage unjail @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage purge</td>
-                <td>Deletes a specified amount of messages from the channel.</td>
-                <td><code>@collage purge 99</code></td>
-            </tr>
-            <tr>
-                <td>@collage qp</td>
-                <td>Creates a poll on your message.</td>
-                <td><code>@collage qp am i cool</code></td>
-            </tr>
-
-
-        </table>
-    </div>
-
-    <div id ="commands-server" class="command-category">
-        <h4>Server Utilites</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage br config role</td>
-                <td>Configurate the server booster role ID for server boosters to be able to create a custom role.</td>
-                <td><code>@collage br config role 1424062519806398636</code></td>
-            </tr>
-            <tr>
-                <td>@collage br create</td>
-                <td>Create a custom booster role if you are boosting a server where the role id is configured.</td>
-                <td><code>@collage br create</code></td>
-            </tr>
-            <tr>
-                <td>@collage br name</td>
-                <td>Name your custom booster role.</td>
-                <td><code>@collage br name Cool Name</code></td>
-            </tr>
-            <tr>
-                <td>@collage br color</td>
-                <td>Change the color of your booster role via hex.</td>
-                <td><code>@collage br color #00ff00</code></td>
-            </tr>
-            <tr>
-                <td>@collage credits</td>
-                <td>Lists the people who created and contributed to this project.</td>
-                <td><code>@collage credits</code></td>
-            </tr>
-            <tr>
-                <td>@collage embed</td>
-                <td>Create a highly customizable embed.</td>
-                <td><code>@collage embed</code></td>
-            </tr>
-            <tr>
-                <td>@collage help</td>
-                <td>View the bot's help menu.</td>
-                <td><code>@collage help</code></td>
-            </tr>
-            <tr>
-                <td>@collage privacy</td>
-                <td>View the privacy policy.</td>
-                <td><code>@collage privacy</code></td>
-            </tr>
-            <tr>
-                <td>@collage rr</td>
-                <td>Create a custom reaction role message.</td>
-                <td><code>@collage rr</code></td>
-            </tr>
-            <tr>
-                <td>@collage ping</td>
-                <td>Show bot's ping, total user count, server count, files downloaded, and total size downloaded.</td>
-                <td><code>@collage ping</code></td>
-            </tr>
-            <tr>
-                <td>@collage av</td>
-                <td>View your own or another user's avatar.</td>
-                <td><code>@collage av @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage search</td>
-                <td>Search for information on a command.</td>
-                <td><code>@collage search juiceinfo</code></td>
-            </tr>
-            <tr>
-                <td>@collage ui</td>
-                <td>Show your own or another users information about their account.</td>
-                <td><code>@collage ui @xbox360s</code></td>
-            </tr>
-            <tr>
-                <td>@collage bc</td>
-                <td>Clear the bot's sent messages.</td>
-                <td><code>@collage bc</code></td>
-            </tr>
-            <tr>
-                <td>si</td>
-                <td>Show detailed server information.</td>
-                <td><code>@collage si</code></td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="commands-fun" class="command-category">
-        <h4>Fun</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage price</td>
-                <td>Get detailed statistics of a cryptocurrency.</td>
-                <td><code>@collage price bitcoin</code></td>
-            </tr>
-            <tr>
-                <td>@collage 8ball</td>
-                <td>Get an answer to your question from the magic 8 ball.</td>
-                <td><code>@collage 8ball will i ever get a girlfriend</code></td>
-            </tr>
-            <tr>
-                <td>@collage smoke</td>
-                <td>No description available.</td>
-                <td><code>@collage smoke vape</code></td>
-            </tr>
-
-        </table>
-    </div>
-
-
-
-    <div id="commands-economy" class="command-category">
-        <h4>Economy &amp; Games</h4>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-            <tr>
-                <td>@collage daily</td>
-                <td>Claim your daily amount of coins.</td>
-                <td><code>@collage daily</code></td>
-            </tr>
-            <tr>
-                <td>@collage weekly</td>
-                <td>Claim your weekly amount of coins.</td>
-                <td><code>@collage weekly</code></td>
-            </tr>
-            <tr>
-                <td>@collage monthly</td>
-                <td>Claim your monthly amount of coins.</td>
-                <td><code>@collage monthly</code></td>
-            </tr>
-            <tr>
-                <td>@collage beg</td>
-                <td>Test your luck and beg for some coins.</td>
-                <td><code>@collage beg</code></td>
-            </tr>
-            <tr>
-                <td>@collage balance</td>
-                <td>Check your wallet and bank account balance.</td>
-                <td><code>@collage balance</code></td>
-            </tr>
-            <tr>
-                <td>@collage deposit</td>
-                <td>Deposit a specifiec amount of coins into your bank.</td>
-                <td><code>@collage deposit 999</code></td>
-            </tr>
-            <tr>
-                <td>@collage withdraw</td>
-                <td>Withdraw a specified amount of coins from your bank into your wallet.</td>
-                <td><code>@collage withdraw 5832</code></td>
-            </tr>
-            <tr>
-                <td>@collage blackjack</td>
-                <td>Play a game of blackjack.</td>
-                <td><code>@collage blackjack 5000</code></td>
-            </tr>
-            <tr>
-                <td>@collage gamble</td>
-                <td>Test your luck and gamble a specified amount of coins, with a 50/50 chance of winning.</td>
-                <td><code>@collage gamble 50000</code></td>
-            </tr>
- 
-        </table>
-    </div>
-    
-    <div id="commands-Last.fm" class="command-category">
-        <h4>Last.fm Commands</h4>
-        <table>
-            <tr>
-                <td>@collage fmset</td>
-                <td>Set your Last.fm username with the bot.</td>
-                <td><code>@collage fmset xignotic</code></td>
-            </tr>
-            <tr>
-                <td>@collage fm</td>
-                <td>Fetch your currently playing or last played track from Last.fm</td>
-                <td><code>@collage fm</code></td>
-            </tr>
-            <tr>
-                <td>@collage ttt</td>
-                <td>Display your top ten tracks for a specific timeframe.</td>
-                <td><code>@collage ttt</code></td>
-            </tr>
-            <tr>
-                <td>@collage rt</td>
-                <td>Display your 10 most recent played tracks.</td>
-                <td><code>@collage rt</code></td>
-            </tr>
-            <tr>
-                <td>@collage ta</td>
-                <td>Display your top artists.</td>
-                <td><code>@collage ta</code></td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<section id="faq">
-        <h3>FAQ: Questions We Should Never Have To Answer</h3>
-        <hr>
-
-        <p><strong>Q: How do I invite the bot? Are you blind?</strong></p>
-        <p>A: Click the "Invite Collage" button located in the header. If you missed it, look up.</p>
-        <hr>
-
-        <p><strong>Q: I found an issue. How do I report a bug?</strong></p>
-        <p>A: Join the official <a href="https://discord.gg/wotp" target="_blank" style="color:#FF5722; text-decoration:none;">Discord Server</a> (link below) and use the designated #bug-reports channel. Provide context; we don't guess.</p>
-        <hr>
-
-        <p><strong>Q: Why did the command I ran fail/stop working?</strong></p>
-        <p>A: It's either a temporary Discord API hiccup, you typed it wrong (99% likely), or we're fixing something critical and you decided to run the exact command we were working on. Try again in 30 seconds. If it's still broken, see the bug report instructions above. Stop pinging me and hounds. I don't want to talk to you.</p>
-        <hr>
-
-        <p><strong>Q: Is this bot free?</strong></p>
-        <p>A: Yes. The bot's core functionality is completely free. We do, however, offer <span style="color: #FF5722;">⭐ Premium</span> features because running this complex infrastructure costs money. You want thousands of indexed files and high uptime? Pay up or shut up. Your choice.</p>
-        <hr>
-
-        <p><strong>Q: Why does the documentation read like a direct personal insult?</strong></p>
-        <p>A: Because reading is a **privilege**, not a right. We spent time coding this monster. You spend five minutes reading the manual. We get to control the narrative. You get to stop asking obvious questions. Seems like a fair trade to us, moron.</p>
-        <hr>
-
-        <p><strong>Q: I used a command and it returned an error about a database connection. Should I panic?</strong></p>
-        <p>A: Yes. Panic. Then remember that our database is larger than your entire music collection and sometimes needs a break. We get trillions of requests. Give it 10 seconds. If the command still doesn't work, it's actually broken, but your complaining won't fix the server rack. Report it once and go do something useful.</p>
-        <hr>
-
-        <p><strong>Q: I'm a developer. Can I contribute to this project?</strong></p>
-        <p>A: Are you serious? The complexity of our codebase would melt your entry-level laptop. This isn't some quick python script; this is a finely tuned machine. If you want to contribute, send us a massive server donation. Otherwise, stick to cloning repositories with 'Hello World' examples. (If you're serious, dm <code>@xbox360s</code>)</p>
-        <hr>
-
-        <p><strong>Q: Where do you get all this data/files? Is it even accurate?</strong></p>
-        <p>A: We don't ask, and you don't need to know. The files are here. The metadata is cross-referenced by a team of obsessive music nerds. If you think something is wrong, you are wrong. Our data is superior. Use it and be grateful.</p>
-        <hr>
-
-        <p><strong>Q: Why is this bot so focused on Juice WRLD, Lil Uzi Vert, etc.?</strong></p>
-        <p>A: Because they have the most leaks, and therefore, they are the best use of our server resources. We serve the demand. If your obscure indie artist had 10,000 unreleased files, we'd build a database for them, too. They don't. So stop asking and listen to a real artist.</p>
-        <hr>
-
-        <p><strong>Q: Why can't I play music/use music commands? Did you break them?</strong></p>
-        <p>A: No, you broke them. Discord restricted music bots because people like you couldn't follow rules. We removed the old music functions because we prefer not being sued. If you want music, use the specialized artist commands or go pay for Spotify like a normal person.</p>
-        <hr>
-
-        <p><strong>Q: I'm trying to use an economy command, but it says I don't have an account.</strong></p>
-        <p>A: Did you expect us to automatically enroll you into our highly complex financial system? You need to type <code>@collage daily</code> or <code>@collage beg</code> first. This registers your account. It's not rocket science. Stop being lazy.</p>
-        <hr>
-
-        <p><strong>Q: Why is the bot not showing the latest leaks? Am I using the wrong command?</strong></p>
-        <p>A: You are probably using the wrong command, yes. But more importantly, our infrastructure takes a moment to process the sheer volume of content being dumped daily. We are constantly updating the database. If it's not here, it's either not leaked, or we haven't certified the file yet. Calm down and check back later, loser. Tried the stem command yet? You probably should. Autograph V2 is not a real song, idiot.</p>
-        <hr>
-
-        <p><strong>Q: Are you adding support for [Insert Random Rapper Here]?</strong></p>
-        <p>A: Maybe. Our roadmap is sacred and classified. If they have an extensive leak history, a dedicated community, and a massive body of work, they're probably on the list. If they dropped one mixtape last year, go use a search engine. Now go look at the <span style="color: #FF5722;">⭐ Premium</span> section; that's who we're focusing on.</p>
-        <hr>
-
-        <p><strong>Q: Why are there so many commands? It's overwhelming.</strong></p>
-        <p>A: That's not a question; it's a confession of weakness. We have over 70 commands because we provide unparalleled utility. If you can't handle it, maybe go back to the bots that only do cat pictures. The <code>@collage help</code> command exists for a reason, moron.</p>
-        <hr>
-
-        <p><strong>Q: Will you ever open-source the code?</strong></p>
-        <p>A: Whenever we feel like it. We're not giving you a roadmap. If the content stream ever slows down—say, when the Juice WRLD material finally stops getting posted maybe we'll consider it. Until then, our code is locked down. Stay tuned... or don't. We don't care.</p>
-        <hr>
-
-        <p><strong>Q: I want to be a Staff/Mod/Helper. How do I apply?</strong></p>
-        <p>A: We don't accept applications. If you're useful, we notice you. If you're just asking for power, we already blocked your DMs. Focus on contributing valuable information, not farming roles. You'll hear from us when we need you (i.e., probably never).</p>
-        <hr>
-
-        <p><strong>Q: The bot is slow right now! What gives?</strong></p>
-        <p>A: Check the annoucements channel in the Discord server first. If we're not actively melting down, it means hundreds of other users are running resource-intensive commands simultaneously. Your patience is required. We are fast, but we're not magic. Yet.</p>
-        <hr>
-
-        <p><strong>Q: Can you add a feature that does [insert feature that only benefits you]?</strong></p>
-        <p>A: Our feature list is driven by community demand and developer interest. If you want a niche tool that only you will use, learn Python. If it's a genuinely good idea that benefits everyone, ping us about it in general. If it's stupid, we'll ignore it.</p>
-        <hr>
-    </section>
-
-    <section id="support">
-        <h3>Support: Last Resort</h3>
-        <hr>
-        <p>You shouldn't need this, but if our documentation has somehow failed you, feel free to reach out:</p>
-        
-        <div class="support-contact-info" style="margin-top:20px;">
-            <p><strong>Discord:</strong> Join our <a href="https://discord.gg/wotp" target="_blank" style="color:#FF5722; text-decoration:none;">Official Support Server</a> for the fastest (and most critical) response.</p>
-            <p><strong>Email:</strong> For business or truly complex inquiries, reach out to <a href="mailto:commitarson@representative.com" style="color:#FF5722; text-decoration:none;">commitarson@representative.com</a>. Expect slow replies.</p>
-        </div>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2025 collagebot.info. Still better than everything else.</p>
-</footer>
 
 </body>
 </html>
