@@ -5,7 +5,7 @@
     <meta property="og:image" content="https://collagebot.info/images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collage | DMCA</title>
+    <title>Collage | Ban Appeals</title>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Collage">
     <meta property="og:title" content="Collage | The Archive">
@@ -14,11 +14,11 @@
     <meta property="og:image" content="https://collagebot.info/images/logo.png">
     <meta name="theme-color" content="#FF5722">
     <meta name="twitter:card" content="summary">
-    
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
@@ -29,7 +29,6 @@
                 <h1>Collage<span class="dot">.</span></h1>
                 <button id="mobile-menu-btn">☰</button>
             </div>
-            
             <nav class="sidebar-nav" id="sidebar-nav">
                 <div class="nav-group">
                     <p class="nav-header">Main</p>
@@ -39,16 +38,16 @@
                     <a href="premium.html">Premium</a>
                     <a href="credits.html">Credits</a>
                 </div>
+
                 <div class="nav-group">
                     <p class="nav-header">Legal</p>
                     <a href="terms-of-service.html">Terms</a>
                     <a href="privacy-policy.html">Privacy</a>
-                    <a href="dmca.html" class="active">DMCA</a>
+                    <a href="dmca.html">DMCA</a>
                 </div>
-
                 <div class="nav-group">
                     <p class="nav-header">Support</p>
-                    <a href="appeals.html">Ban Appeal</a>
+                    <a href="appeals.html" class="active">Ban Appeal</a>
                     <a href="status.html">Status</a>
                 </div>
 
@@ -57,39 +56,61 @@
                         Invite Collage
                     </a>
                 </div>
-
+                
             </nav>
+
+
+        
+
         </aside>
 
         <main class="content">
             <div class="hero-section">
-                <h2>DMCA & Copyright</h2>
-                <p class="subtitle">We don't host files. We just know where they are.</p>
+                <h2>Ban Appeals</h2>
+                <p class="subtitle">So, you messed up.</p>
             </div>
 
             <div class="content-wrapper">
                 
+                <div class="alert-box">
+                    <strong>Before you start:</strong> We ban people for a reason. The chances of your appeal being accepted are statistically close to zero. But you are welcome to try.
+                </div>
+
                 <div class="card">
                     <div class="card-header">
-                        <h4>Content Disclaimer</h4>
+                        <h4>Instructions</h4>
                     </div>
                     <div style="padding: 25px;">
-                        <p>Collage functions as a search engine and indexing tool. We do not host, upload, or store copyrighted audio files on our own servers. All files retrieved by commands (such as <code>-leak</code> or <code>-repost</code>) are hosted by third-party services or served directly from Discord's own CDN (Content Delivery Network).</p>
-                        <p>We are a map, not a storage locker. If you have an issue with the content, take it up with the host.</p>
+                        <p>We do not use a web form because we don't want to store your excuses in our database. If you want to appeal, you must send an email.</p>
+                        
+                        <ol class="steps-list">
+                            <li>Ensure you have actually been banned and aren't just experiencing an internet outage.</li>
+                            <li>Write an email to <code>commitarson@representative.com</code>.</li>
+                            <li>Subject Line MUST be: <strong>[Ban Appeal] YourUsername#0000</strong></li>
+                            <li>Include your <strong>Discord User ID</strong> (Turn on Developer Mode if you don't know how).</li>
+                            <li>Explain why you did it, and why we should care.</li>
+                        </ol>
+
+                        <hr style="margin: 20px 0; opacity: 0.1;">
+
+                        <a href="mailto:commitarson@representative.com?subject=[Ban Appeal] INSERT_USERNAME_HERE" class="btn-primary" style="border-color: var(--accent); color: var(--accent) !important;">
+                            Draft Email
+                        </a>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
-                        <h4>Takedown Requests</h4>
+                        <h4>Automatic Rejections</h4>
                     </div>
                     <div style="padding: 25px;">
-                        <p>If you are a copyright holder and believe a specific index entry infringes on your rights, you may contact us to have the <strong>metadata</strong> removed from our bot's search results.</p>
-                        <ul style="margin-top: 15px; margin-bottom: 15px; padding-left: 20px; color: var(--text-muted);">
-                            <li>We cannot delete the file from the internet (we don't control the host).</li>
-                            <li>We can only stop our bot from pointing to it.</li>
+                        <p>Your appeal will be instantly deleted if:</p>
+                        <ul style="margin-top: 15px; padding-left: 20px; color: var(--text-muted);">
+                            <li>You lie about what you did (we have logs).</li>
+                            <li>You say "my brother used my account."</li>
+                            <li>You spam our DMs asking to check your email.</li>
+                            <li>You don't include your User ID.</li>
                         </ul>
-                        <p>Contact <code>commitarson@representative.com</code> with the subject line <strong>"DMCA Request"</strong>. Include proof of ownership. If you send us a fake request, we will ignore it and probably mock you.</p>
                     </div>
                 </div>
 
