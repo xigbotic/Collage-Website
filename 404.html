@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | You are lost.</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/docs.css">
+    
+    <style>
+        /* Center everything for the 404 page */
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Takes up most of the screen */
+            text-align: center;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 20px;
+            font-family: var(--font-code);
+            text-shadow: 0 0 20px rgba(255, 87, 34, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="docs-layout">
+        <!-- Sidebar (Keep it so they can escape) -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-wrapper">
+                <div class="error-container">
+                    <div class="error-code">404</div>
+                    <h2 style="font-size: 2rem; margin-bottom: 10px;">You broke it.</h2>
+                    <p style="max-width: 500px; margin: 0 auto 30px auto;">
+                        The page you are looking for doesn't exist. You probably typed the URL wrong. 
+                        We didn't move it. It's not our fault. It is statistically likely that you made a mistake.
+                    </p>
+                    <a href="index.html" class="btn-primary" style="width: auto; padding: 10px 40px; border-color: var(--accent);">
+                        Go Home (Shamefully)
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
+    </script>
+</body>
+</html>

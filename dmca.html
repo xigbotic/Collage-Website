@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage | DMCA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/docs.css">
+</head>
+<body>
+
+    <div class="docs-layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <a href="premium.html">Premium</a>
+                    <a href="credits.html">Credits</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-header">Legal</p>
+                    <a href="terms-of-service.html">Terms</a>
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="dmca.html" class="active">DMCA</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="hero-section">
+                <h2>DMCA & Copyright</h2>
+                <p class="subtitle">We don't host files. We just know where they are.</p>
+            </div>
+
+            <div class="content-wrapper">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Content Disclaimer</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>Collage functions as a search engine and indexing tool. We do not host, upload, or store copyrighted audio files on our own servers. All files retrieved by commands (such as <code>-leak</code> or <code>-repost</code>) are hosted by third-party services or served directly from Discord's own CDN (Content Delivery Network).</p>
+                        <p>We are a map, not a storage locker. If you have an issue with the content, take it up with the host.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Takedown Requests</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>If you are a copyright holder and believe a specific index entry infringes on your rights, you may contact us to have the <strong>metadata</strong> removed from our bot's search results.</p>
+                        <ul style="margin-top: 15px; margin-bottom: 15px; padding-left: 20px; color: var(--text-muted);">
+                            <li>We cannot delete the file from the internet (we don't control the host).</li>
+                            <li>We can only stop our bot from pointing to it.</li>
+                        </ul>
+                        <p>Contact <code>commitarson@representative.com</code> with the subject line <strong>"DMCA Request"</strong>. Include proof of ownership. If you send us a fake request, we will ignore it and probably mock you.</p>
+                    </div>
+                </div>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
+    </script>
+</body>
+</html>

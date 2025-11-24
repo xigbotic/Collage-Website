@@ -31,6 +31,7 @@
                     <a href="docs.html" class="active">Documentation</a>
                     <a href="changelog.html">Changelog</a>
                     <a href="premium.html">Premium</a>
+                    <a href="credits.html">Credits</a>
                 </div>
 
                 <div class="nav-group">
@@ -736,6 +737,13 @@
             </div>
         </main>
     </div>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
+    </script>
+
 
 </body>
 </html>

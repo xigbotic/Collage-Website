@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage | Credits</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- LINK TO SHARED CSS -->
+    <link rel="stylesheet" href="css/docs.css">
+
+    <style>
+        /* Special styles just for the credits page */
+        .contributor-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contributor-item {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .contributor-item:last-child {
+            border-bottom: none;
+        }
+        .contributor-name {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+        .contributor-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        /* Testers Grid */
+        .tester-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        .tester-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-code);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .tester-badge:hover {
+            border-color: var(--accent);
+            background: rgba(255, 87, 34, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Layout Wrapper -->
+    <div class="docs-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Collage<span class="dot">.</span></h1>
+                <button id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="nav-group">
+                    <p class="nav-header">Main</p>
+                    <a href="index.html">Home</a>
+                    <a href="docs.html">Documentation</a>
+                    <a href="changelog.html">Changelog</a>
+                    <a href="premium.html">Premium</a>
+                    <a href="credits.html" class="active">Credits</a>
+                </div>
+
+                <div class="nav-group">
+                    <p class="nav-header">Legal</p>
+                    <a href="terms-of-service.html">Terms</a>
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="dmca.html">DMCA</a>
+                </div>
+
+                <div class="nav-footer">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1342901357568458772" target="_blank" class="btn-primary">
+                        Invite Collage
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            
+            <div class="hero-section">
+                <h2>Credits</h2>
+                <p class="subtitle">The people we actually respect. Everyone else is irrelevant.</p>
+            </div>
+
+            <div class="content-wrapper">
+                
+                <!-- Developers -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>The Architects</h4>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>These two built the bot. Send money.</p>
+                        <div style="display: flex; gap: 20px; margin-top: 15px;">
+                            <a href="https://paypal.me/xigbotic" class="btn-primary" style="width: auto; padding: 10px 25px; border-color: var(--accent); color: var(--accent) !important;">@xbox360s</a>
+                            <a href="#" class="btn-primary" style="width: auto; padding: 10px 25px; border-color: var(--accent); color: var(--accent) !important;">@houndswrldd</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Thanks -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>The Enablers (Special Thanks)</h4>
+                    </div>
+                    <div style="padding: 0 25px;">
+                        <ul class="contributor-list">
+                            <li class="contributor-item">
+                                <span class="contributor-name">@merikaaaaa</span>
+                                <span class="contributor-desc">Extremely skilled developer who contributed to this entire project. Unlike you, he knows how to code. <a href="https://merika.dev/" style="text-decoration:underline;">Check out his FH5 Trainer Here.</a></span>
+                            </li>
+                            <li class="contributor-item">
+                                <span class="contributor-name">@VerzeHxD</span>
+                                <span class="contributor-desc">Provided the database for the snippet command. Saved us from doing manual labor.</span>
+                            </li>
+                            <li class="contributor-item">
+                                <span class="contributor-name">@gabedoesntgaf</span>
+                                <span class="contributor-desc">Created the Juice WRLD groupbuy spreadsheet. Organized chaos.</span>
+                            </li>
+                            <li class="contributor-item">
+                                <span class="contributor-name">@192kbps</span>
+                                <span class="contributor-desc">Compiled the Juice WRLD information spreadsheet. Audio nerd.</span>
+                            </li>
+                            <li class="contributor-item">
+                                <span class="contributor-name">@WRLDOverlord</span>
+                                <span class="contributor-desc">Compiled the Lil Uzi Vert information spreadsheet. Data hoarder.</span>
+                            </li>
+                            <li class="contributor-item">
+                                <span class="contributor-name">@juicewrldapi</span>
+                                <span class="contributor-desc">Provided the JuiceWRLDAPI. We stole their data so you could enjoy it.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Testers -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>The Crash Dummies (Testers)</h4>
+                    </div>
+                    <div class="tester-grid">
+                        <span class="tester-badge">@sharkky999</span>
+                        <span class="tester-badge">@angzyjr</span>
+                        <span class="tester-badge">@999ashton</span>
+                        <span class="tester-badge">@nick1616</span>
+                        <span class="tester-badge">@truesecurity</span>
+                        <span class="tester-badge">@jo097951</span>
+                        <span class="tester-badge">@squiregilligan</span>
+                        <span class="tester-badge">@kfjaf</span>
+                        <span class="tester-badge">@aussigirl2</span>
+                        <span class="tester-badge">@blxssedfr</span>
+                    </div>
+                    <div style="padding: 0 25px 25px 25px;">
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">
+                            These people ran broken commands repeatedly for free. We appreciate their lack of self-preservation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Note -->
+                <div class="alert-box">
+                    <strong>Note:</strong> Your feedback, ideas, and patience helped shape this bot into what it is today. Thank you for your continued support. Now go join the server.
+                </div>
+
+                <footer>
+                    <p>&copy; 2025 collagebot.info</p>
+                </footer>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('sidebar-nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
