@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <meta property="og:image" content="https://collagebot.info/images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collage | Home</title>
+
+    <!-- Meta Tags / Embeds -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <meta property="og:image" content="https://collagebot.info/images/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Collage">
     <meta property="og:title" content="Collage | The Archive">
     <meta property="og:description" content="The only music bot worth using. Indexing Juice WRLD, Uzi, Carti, and more. Stop using inferior bots.">
     <meta property="og:url" content="https://collagebot.info">
-    <meta property="og:image" content="https://collagebot.info/images/logo.png">
     <meta name="theme-color" content="#FF5722">
     <meta name="twitter:card" content="summary">
     
@@ -20,10 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- USE THE SAME CSS AS YOUR DOCS -->
-    <link rel="stylesheet" href="css/docs.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/docs.css">
 
-    <!-- Custom Home-Specific Styles (Internal to keep it simple) -->
+    <!-- Custom Home-Specific Styles -->
     <style>
         .dev-grid {
             display: grid;
@@ -42,11 +43,13 @@
             margin-bottom: 10px;
             border: 1px solid rgba(255,255,255,0.1);
             transition: transform 0.2s, opacity 0.2s;
+            text-decoration: none;
         }
 
         .social-btn:hover {
             transform: translateY(-2px);
             opacity: 0.9;
+            color: #fff;
         }
 
         .social-btn img {
@@ -58,12 +61,12 @@
         /* Branding Colors */
         .btn-twitter { background-color: #1DA1F2; border-color: #1DA1F2; }
         .btn-github { background-color: #24292e; border-color: #24292e; }
-        .btn-discord { background-color: #5865F2; }
         
         .cta-box {
-            background: linear-gradient(45deg, var(--bg-card), rgba(255, 87, 34, 0.05));
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 87, 34, 0.08) 100%);
             text-align: center;
-            padding: 50px;
+            padding: 60px 40px;
+            border: 1px solid var(--border-color);
         }
     </style>
 </head>
@@ -91,15 +94,15 @@
 
                 <div class="nav-group">
                     <p class="nav-header">Legal</p>
-                    <a href="terms-of-service.html">Terms</a>
-                    <a href="privacy-policy.html">Privacy</a>
-                    <a href="dmca.html">DMCA</a>
+                    <a href="/termsofservice/">Terms</a>
+                    <a href="/privacypolicy/">Privacy</a>
+                    <a href="/dmca/">DMCA</a>
                 </div>
 
                 <div class="nav-group">
                     <p class="nav-header">Support</p>
-                    <a href="appeals.html">Ban Appeal</a>
-                    <a href="status.html">Status</a>
+                    <a href="/appeals/">Ban Appeal</a>
+                    <a href="/status/">Status</a>
                 </div>
 
                 <div class="nav-footer">
@@ -114,22 +117,88 @@
         <main class="content">
             
             <div class="hero-section">
-                <h2>The Archive.</h2>
+                <h2 id="typing-text" style="border-right: 3px solid var(--accent); display: inline-block; padding-right: 5px;">The Archive.</h2>
                 <p class="subtitle">The only music bot worth using. Everyone else is just pretending.</p>
             </div>
 
             <div class="content-wrapper">
                 
-                <!-- Main Intro -->
-                <div class="card cta-box">
-                    <h3>This Is Collage. Now Use It.</h3>
-                    <p style="max-width: 600px; margin: 15px auto;">You've found the homepage. Congratulations. Now that you've wasted enough time, navigate to the Docs section and learn how to use the best damn music bot on the platform. Or don't. We don't care.</p>
-                    
-                    <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
-                        <a href="docs.html" class="btn-primary" style="margin:0; background: #fff !important; color: #000 !important;">Read Docs</a>
-                        <a href="https://discord.gg/wotp" target="_blank" class="btn-primary" style="margin:0; background: #5865F2 !important;">Join Discord</a>
+                <!-- 1. STATS STRIP -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 40px; text-align: center;">
+                    <div class="card" style="padding: 20px; margin-bottom: 0;">
+                        <h3 style="font-size: 2rem; margin-bottom: 5px; color: var(--accent);">118</h3>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px;">Servers</span>
+                    </div>
+                    <div class="card" style="padding: 20px; margin-bottom: 0;">
+                        <h3 style="font-size: 2rem; margin-bottom: 5px; color: var(--accent);">24.3k</h3>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px;">Users</span>
+                    </div>
+                    <div class="card" style="padding: 20px; margin-bottom: 0;">
+                        <h3 style="font-size: 2rem; margin-bottom: 5px; color: var(--accent);">352.4GB</h3>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px;">Indexed Files</span>
                     </div>
                 </div>
+
+                <!-- Main Intro CTA -->
+                <div class="card cta-box">
+                    <h3 style="font-size: 1.8rem;">This Is Collage. Now Use It.</h3>
+                    <p style="max-width: 600px; margin: 15px auto; color: var(--text-muted);">
+                        You've found the homepage. Congratulations. Navigate to the Docs section and learn how to use the most superior music bot on the platform. Or don't. We don't care.
+                    </p>
+                    
+                    <div style="display: flex; gap: 15px; justify-content: center; margin-top: 35px; flex-wrap: wrap;">
+                        <a href="/docs/" class="btn-primary" style="margin:0; background: #fff !important; color: #000 !important; width: auto; padding: 12px 30px;">Read Docs</a>
+                        <a href="https://discord.gg/wotp" target="_blank" class="btn-primary" style="margin:0; background: #5865F2 !important; border-color: #5865F2; width: auto; padding: 12px 30px;">Join Discord</a>
+                    </div>
+                </div>
+
+                <!-- 2. FEATURE GRID (Why We Are Better) -->
+                <div class="section-header" style="margin-top: 60px;">
+                    <h3>System Modules</h3>
+                    <p>Features you didn't know you needed.</p>
+                </div>
+
+                <div class="dev-grid">
+                    <!-- Feature 1 -->
+                    <div class="card" style="padding: 25px; height: 100%;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,87,34,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <span style="font-size: 1.2rem;">🎵</span>
+                        </div>
+                        <h4 style="color: #fff; margin-bottom: 10px;">The Vault</h4>
+                        <p style="font-size: 0.95rem;">We index everything. Juice WRLD, Uzi, Carti, Gunna. If it leaked, we have it. If we don't have it, it doesn't exist.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="card" style="padding: 25px; height: 100%;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,87,34,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <span style="font-size: 1.2rem;">💸</span>
+                        </div>
+                        <h4 style="color: #fff; margin-bottom: 10px;">Economy</h4>
+                        <p style="font-size: 0.95rem;">A (almost) fully functional gambling addiction simulator. Earn coins, lose them in Blackjack, and cry about it.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="card" style="padding: 25px; height: 100%;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,87,34,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <span style="font-size: 1.2rem;">⚡</span>
+                        </div>
+                        <h4 style="color: #fff; margin-bottom: 10px;">Instant Speed</h4>
+                        <p style="font-size: 0.95rem;">Rewritten caching engine. Commands execute faster than your internet can handle.</p>
+                    </div>
+                </div>
+
+                <!-- 3. LATEST UPDATE BANNER -->
+                <a href="/changelog/" style="text-decoration: none; display: block; margin-top: 40px;">
+                    <div class="alert-box" style="background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--accent); transition: transform 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="color: #fff; display: block; margin-bottom: 5px;">Latest Update: v3.0.2</strong>
+                                <span style="color: var(--text-muted); font-size: 0.9rem;">Added <code>ogfile</code> command, <code>protools</code> support, and fixed caching.</span>
+                            </div>
+                            <span style="color: var(--accent); font-weight: bold;">Read &rarr;</span>
+                        </div>
+                    </div>
+                </a>
 
                 <hr>
 
@@ -144,18 +213,18 @@
                     <!-- Dev 1: xig -->
                     <div class="card" style="padding: 25px;">
                         <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                            <!-- Optional: You can put an avatar img here if you want -->
                             <div>
                                 <h4 style="color:#fff; margin:0;">xig</h4>
                                 <span style="color:var(--text-code); font-size: 0.9em;">@xbox360s</span>
                             </div>
                         </div>
                         
+                        <!-- Updated Image Paths -->
                         <a href="https://x.com/CommitedToArson" target="_blank" class="social-btn btn-twitter">
-                            <img src="images/twitter.png" alt="Twitter"> X / Twitter
+                            <img src="/images/twitter.png" alt="Twitter"> X / Twitter
                         </a>
                         <a href="https://github.com/xigbotic" target="_blank" class="social-btn btn-github">
-                            <img src="images/github.png" alt="GitHub"> GitHub
+                            <img src="/images/github.png" alt="GitHub"> GitHub
                         </a>
                     </div>
 
@@ -169,10 +238,10 @@
                         </div>
 
                         <a href="https://twitter.com/houndswrld" target="_blank" class="social-btn btn-twitter">
-                            <img src="images/twitter.png" alt="Twitter"> X / Twitter
+                            <img src="/images/twitter.png" alt="Twitter"> X / Twitter
                         </a>
                         <a href="https://github.com/houndswrld" target="_blank" class="social-btn btn-github">
-                            <img src="images/github.png" alt="GitHub"> GitHub
+                            <img src="/images/github.png" alt="GitHub"> GitHub
                         </a>
                     </div>
 
@@ -190,10 +259,46 @@
     <script>
         const menuBtn = document.getElementById('mobile-menu-btn');
         const nav = document.getElementById('sidebar-nav');
+        
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
 
-        menuBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+        // Typing Animation Logic
+        const textElement = document.getElementById('typing-text');
+        const phrases = ["The Archive.", "The Vault.", "The Standard."];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 2000); // Wait before deleting
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeEffect, 500); // Wait before typing next
+            } else {
+                const speed = isDeleting ? 50 : 100;
+                setTimeout(typeEffect, speed);
+            }
+        }
+
+        // Start animation
+        document.addEventListener('DOMContentLoaded', typeEffect);
     </script>
 </body>
 </html>

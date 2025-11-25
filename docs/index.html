@@ -73,6 +73,14 @@
                 <p class="subtitle">Read the manual. Execute the commands. Don't ask questions.</p>
             </div>
 
+
+                 <!-- Search Bar -->
+                <div class="search-container" style="margin-bottom: 30px;">
+                    <input type="text" id="cmdSearch" placeholder="Search for a command (e.g. 'ban', 'leak')..." 
+                    style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid var(--border-color); background: #000; color: #fff; font-family: var(--font-ui); font-size: 1rem; outline: none;">
+                </div>
+
+
             <div class="content-wrapper">
                 <section id="introduction">
                     <h3>Introduction</h3>
@@ -96,8 +104,10 @@
 
                 <hr>
 
-<!-- Commands Index Header -->
+
+                <!-- Commands Index Header -->
                 <div class="section-header">
+                    <!-- Search Bar -->
                     <h3>Commands Index</h3>
                     <p>Below is the complete list of technical parameters.</p>
                 </div>
@@ -152,6 +162,11 @@
                                     <td><code>protools</code></td>
                                     <td>Get any leaked Juice WRLD Pro Tools session.</td>
                                     <td><code>@collage protools I Hate Her Friends</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ogfile</code></td>
+                                    <td>Search for all leaked Juice WRLD original files.</td>
+                                    <td><code>@collage ogfile prime time</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>uzileak</code></td>
@@ -210,12 +225,12 @@
                             <tbody>
                                 <tr>
                                     <td><code>leak</code></td>
-                                    <td>Provides song file and information for a song.</td>
+                                    <td>Provides song file and information for a Juice WRLD song.</td>
                                     <td><code>@collage leak rental</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>snippet</code></td>
-                                    <td>Provides known snippets of a provided song.</td>
+                                    <td>Provides known snippets of a provided Juice WRLD song.</td>
                                     <td><code>@collage snip k like a russian</code></td>
                                 </tr>
                                 <tr>
@@ -240,12 +255,12 @@
                                 </tr>
                                 <tr>
                                     <td><code>session</code></td>
-                                    <td>Provides a session edit for a specified song.</td>
+                                    <td>Provides a session edit for a specified Juice WRLDsong.</td>
                                     <td><code>@collage session nintendo</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>listallsessions</code></td>
-                                    <td>Provides a list of all leaked session edits.</td>
+                                    <td>Provides a list of all leaked Juice WRLD session edits.</td>
                                     <td><code>@collage listallsessions</code></td>
                                 </tr>
                                 <tr>
@@ -255,12 +270,12 @@
                                 </tr>
                                 <tr>
                                     <td><code>stem</code></td>
-                                    <td>Provides a specified stem.</td>
+                                    <td>Provides a specified Juice WRLD stem.</td>
                                     <td><code>@collage stem violence</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>remaster</code></td>
-                                    <td>Provides a specified remaster.</td>
+                                    <td>Provides a specified Juice WRLD remaster.</td>
                                     <td><code>@collage remaster timezone</code></td>
                                 </tr>
                                 <tr>
@@ -270,12 +285,12 @@
                                 </tr>
                                 <tr>
                                     <td><code>erainfo</code></td>
-                                    <td>Get information on a specified era.</td>
+                                    <td>Get information on a specified Juice WRLD era.</td>
                                     <td><code>@collage erainfo goodbye & good riddance</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>cover</code></td>
-                                    <td>Provides covers for a specified song or album.</td>
+                                    <td>Provides covers for a specified Juice WRLD song or album.</td>
                                     <td><code>@collage cover death race for love</code></td>
                                 </tr>
                                 <tr>
@@ -629,107 +644,121 @@
                     <h3>FAQ: Questions We Should Never Have To Answer</h3>
                     
                     <div class="faq-grid">
-                        <!-- Q1 -->
-                        <div class="faq-item">
-                            <p class="question">Q: How do I invite the bot? Are you blind?</p>
-                            <p class="answer">A: Click the "Invite Collage" button located in the sidebar. If you missed it, look left.</p>
-                        </div>
+        <!-- --- TIER 1: BASICS & MONEY --- -->
+        
+        <!-- Q1: Invite -->
+        <div class="faq-item">
+            <p class="question">Q: How do I invite the bot? Are you blind?</p>
+            <p class="answer">A: Click the "Invite Collage" button located in the sidebar. If you missed it, look left.</p>
+        </div>
 
-                        <!-- Q2 -->
-                        <div class="faq-item">
-                            <p class="question">Q: I found an issue. How do I report a bug?</p>
-                            <p class="answer">A: Join the official <a href="https://discord.gg/wotp" target="_blank">Discord Server</a> and use the designated #bug-reports channel. Provide context; we don't guess.</p>
-                        </div>
+        <!-- Q2: Is it Free? -->
+        <div class="faq-item">
+            <p class="question">Q: Is this bot free?</p>
+            <p class="answer">A: Yes. The bot's core functionality is completely free. We do, however, offer <span style="color: var(--accent); font-weight:bold;">⭐ Premium</span> features because running this complex infrastructure costs money. You want thousands of indexed files and high uptime? Pay up or shut up.</p>
+        </div>
 
-                        <!-- Q3 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why did the command I ran fail/stop working?</p>
-                            <p class="answer">A: It's either a temporary Discord API hiccup, you typed it wrong (99% likely), or we're fixing something critical and you decided to run the exact command we were working on. Try again in 30 seconds. If it's still broken, see the bug report instructions above. Stop pinging me and hounds. I don't want to talk to you.</p>
-                        </div>
+        <!-- Q3: Daily Limits (New) -->
+        <div class="faq-item">
+            <p class="question">Q: Why does the bot say I reached my "Daily Limit"?</p>
+            <p class="answer">A: Because bandwidth costs money and you aren't paying for it. Free users get <strong>10 uses</strong> of premium-tier commands (like <code>ogfile</code>) per day. If you want unlimited access, buy Premium. If not, wait 24 hours.</p>
+        </div>
 
-                        <!-- Q4 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Is this bot free?</p>
-                            <p class="answer">A: Yes. The bot's core functionality is completely free. We do, however, offer <span style="color: var(--accent); font-weight:bold;">⭐ Premium</span> features because running this complex infrastructure costs money. You want thousands of indexed files and high uptime? Pay up or shut up. Your choice.</p>
-                        </div>
+        <!-- --- TIER 2: USAGE & ERRORS --- -->
 
-                        <!-- Q5 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why does the documentation read like a direct personal insult?</p>
-                            <p class="answer">A: Because reading is a <strong>privilege</strong>, not a right. We spent time coding this monster. You spend five minutes reading the manual. We get to control the narrative. You get to stop asking obvious questions. Seems like a fair trade to us, moron.</p>
-                        </div>
+        <!-- Q4: Commands / Prefix (New) -->
+        <div class="faq-item">
+            <p class="question">Q: My prefix isn't working / How do I use Slash Commands?</p>
+            <p class="answer">A: We support both. You can ping the bot <code>@collage</code> or use the <code>/</code> slash commands. Since v3.0.3, slash commands work in DMs and Group Chats too. If you can't figure out how to type a slash, there is no hope for you.</p>
+        </div>
 
-                        <!-- Q6 -->
-                        <div class="faq-item">
-                            <p class="question">Q: I used a command and it returned an error about a database connection. Should I panic?</p>
-                            <p class="answer">A: Yes. Panic. Then remember that our database is larger than your entire music collection and sometimes needs a break. We get trillions of requests. Give it 10 seconds. If the command still doesn't work, it's actually broken, but your complaining won't fix the server rack. Report it once and go do something useful.</p>
-                        </div>
+        <!-- Q5: Command Failed -->
+        <div class="faq-item">
+            <p class="question">Q: Why did the command I ran fail/stop working?</p>
+            <p class="answer">A: It's either a temporary Discord API hiccup, you typed it wrong (99% likely), or we're fixing something critical. Try again in 30 seconds. Stop pinging me and hounds immediately.</p>
+        </div>
 
-                        <!-- Q7 -->
-                        <div class="faq-item">
-                            <p class="question">Q: I'm a developer. Can I contribute to this project?</p>
-                            <p class="answer">A: Are you serious? The complexity of our codebase would melt your entry-level laptop. This isn't some quick python script; this is a finely tuned machine. If you want to contribute, send us a massive server donation. Otherwise, stick to cloning repositories with 'Hello World' examples. (If you're serious, dm <code>@xbox360s</code>)</p>
-                        </div>
+        <!-- Q6: Database/Connection Errors -->
+        <div class="faq-item">
+            <p class="question">Q: I used a command and it returned an error about a database connection.</p>
+            <p class="answer">A: Our database processes trillions of requests. Sometimes it blinks. Give it 10 seconds. If the command still doesn't work, report it once and go do something useful.</p>
+        </div>
 
-                        <!-- Q8 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Where do you get all this data/files? Is it even accurate?</p>
-                            <p class="answer">A: We don't ask, and you don't need to know. The files are here. The metadata is cross-referenced by a team of obsessive music nerds. If you think something is wrong, you are wrong. Our data is superior. Use it and be grateful.</p>
-                        </div>
+        <!-- Q7: Lag (Updated to "Gaslighting" version) -->
+        <div class="faq-item">
+            <p class="question">Q: The bot feels slow. Is it lagging?</p>
+            <p class="answer">A: No. We recently rewrote the entire caching engine. The bot is instant. If it feels slow, it's your internet connection or Discord's API dying. Don't blame our code for your bad ISP.</p>
+        </div>
 
-                        <!-- Q9 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why is this bot so focused on Juice WRLD, Lil Uzi Vert, etc.?</p>
-                            <p class="answer">A: Because they have the most leaks, and therefore, they are the best use of our server resources. We serve the demand. If your obscure indie artist had 10,000 unreleased files, we'd build a database for them, too. They don't. So stop asking and listen to a real artist.</p>
-                        </div>
+        <!-- --- TIER 3: CONTENT & SCOPE --- -->
 
-                        <!-- Q10 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why can't I play music/use music commands? Did you break them?</p>
-                            <p class="answer">A: No, you broke them. Discord restricted music bots because people like you couldn't follow rules. We removed the old music functions because we prefer not being sued. If you want music, use the specialized artist commands or go pay for Spotify like a normal person.</p>
-                        </div>
+        <!-- Q8: Music Playback -->
+        <div class="faq-item">
+            <p class="question">Q: Why can't I play music/use music commands?</p>
+            <p class="answer">A: Discord restricted music bots because people like you couldn't follow rules. We removed the old functions to avoid legal issues. Use the specialized artist commands or go pay for Spotify like a normal person.</p>
+        </div>
 
-                        <!-- Q12 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why is the bot not showing the latest leaks? Am I using the wrong command?</p>
-                            <p class="answer">A: You are probably using the wrong command, yes. But more importantly, our infrastructure takes a moment to process the sheer volume of content being dumped daily. We are constantly updating the database. If it's not here, it's either not leaked, or we haven't certified the file yet. Calm down and check back later, loser. Tried the stem command yet? You probably should. Autograph V2 is not a real song, idiot.</p>
-                        </div>
+        <!-- Q9: Missing Leaks -->
+        <div class="faq-item">
+            <p class="question">Q: Why is the bot not showing the latest leaks?</p>
+            <p class="answer">A: Our infrastructure takes a moment to process the sheer volume of content being dumped daily. If it's not here, it's either not leaked, or we haven't certified the file yet. Calm down and check back later.</p>
+        </div>
 
-                        <!-- Q13 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Are you adding support for [Insert Random Rapper Here]?</p>
-                            <p class="answer">A: Maybe. Our roadmap is sacred and classified. If they have an extensive leak history, a dedicated community, and a massive body of work, they're probably on the list. If they dropped one mixtape last year, go use a search engine. Now go look at the <span style="color: var(--accent); font-weight:bold;">⭐ Premium</span> section; that's who we're focusing on.</p>
-                        </div>
+        <!-- Q10: Artist Focus -->
+        <div class="faq-item">
+            <p class="question">Q: Why is this bot so focused on Juice WRLD, Lil Uzi Vert, etc.?</p>
+            <p class="answer">A: Because they have the most leaks, and therefore, they are the best use of our server resources. If your obscure indie artist had 10,000 unreleased files, we'd build a database for them, too. They don't.</p>
+        </div>
 
-                        <!-- Q14 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Why are there so many commands? It's overwhelming.</p>
-                            <p class="answer">A: That's not a question; it's a confession of weakness. We have over 70 commands because we provide unparalleled utility. If you can't handle it, maybe go back to the bots that only do cat pictures. The <code>@collage help</code> command exists for a reason, moron.</p>
-                        </div>
+        <!-- Q11: New Artists -->
+        <div class="faq-item">
+            <p class="question">Q: Are you adding support for [Insert Random Rapper Here]?</p>
+            <p class="answer">A: Maybe. If they have an extensive leak history and a massive body of work, they're probably on the roadmap. If they dropped one mixtape last year, go use a search engine.</p>
+        </div>
 
-                        <!-- Q15 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Will you ever open-source the code?</p>
-                            <p class="answer">A: Whenever we feel like it. We're not giving you a roadmap. If the content stream ever slows down—say, when the Juice WRLD material finally stops getting posted maybe we'll consider it. Until then, our code is locked down. Stay tuned... or don't. We don't care.</p>
-                        </div>
+        <!-- --- TIER 4: SUPPORT & META --- -->
 
-                        <!-- Q16 -->
-                        <div class="faq-item">
-                            <p class="question">Q: I want to be a Staff/Mod/Helper. How do I apply?</p>
-                            <p class="answer">A: We don't accept applications. If you're useful, we notice you. If you're just asking for power, we already blocked your DMs. Focus on contributing valuable information, not farming roles. You'll hear from us when we need you (i.e., probably never).</p>
-                        </div>
+        <!-- Q12: Reporting Bugs -->
+        <div class="faq-item">
+            <p class="question">Q: I found an issue. How do I report a bug?</p>
+            <p class="answer">A: Join the official <a href="https://discord.gg/wotp" target="_blank">Discord Server</a> and use the designated #bug-reports channel. Provide context; we don't guess.</p>
+        </div>
 
-                        <!-- Q17 -->
-                        <div class="faq-item">
-                            <p class="question">Q: The bot is slow right now! What gives?</p>
-                            <p class="answer">A: Check the annoucements channel in the Discord server first. If we're not actively melting down, it means hundreds of other users are running resource-intensive commands simultaneously. Your patience is required. We are fast, but we're not magic. Yet.</p>
-                        </div>
+        <!-- Q13: Bans (New) -->
+        <div class="faq-item">
+            <p class="question">Q: I was blacklisted/banned from the bot. Unban me.</p>
+            <p class="answer">A: No. If you managed to get banned, you likely tried to exploit our systems. If you really think you're innocent (you aren't), check the <a href="/appeals.html" style="color: var(--accent);">Appeals Page</a>. Expect rejection.</p>
+        </div>
 
-                        <!-- Q18 -->
-                        <div class="faq-item">
-                            <p class="question">Q: Can you add a feature that does [insert feature that only benefits you]?</p>
-                            <p class="answer">A: Our feature list is driven by community demand and developer interest. If you want a niche tool that only you will use, learn Python. If it's a genuinely good idea that benefits everyone, ping us about it in general. If it's stupid, we'll ignore it.</p>
-                        </div>
+        <!-- Q14: The "Mean" Tone -->
+        <div class="faq-item">
+            <p class="question">Q: Why does the documentation read like a direct personal insult?</p>
+            <p class="answer">A: Because reading is a <strong>privilege</strong>, not a right. We spent time coding this monster. You spend five minutes reading the manual. We get to control the narrative. Seems like a fair trade to us.</p>
+        </div>
+
+        <!-- Q15: Feature Requests -->
+        <div class="faq-item">
+            <p class="question">Q: Can you add a feature that does [insert feature that only benefits you]?</p>
+            <p class="answer">A: If it's a genuinely good idea that benefits everyone, ping us about it in general. If it's a niche tool that only you will use, learn Python and build it yourself.</p>
+        </div>
+
+        <!-- Q16: Open Source -->
+        <div class="faq-item">
+            <p class="question">Q: Will you ever open-source the code?</p>
+            <p class="answer">A: Whenever we feel like it. Until then, our code is locked down. Stay tuned... or don't. We don't care.</p>
+        </div>
+
+        <!-- Q17: Staff Apps -->
+        <div class="faq-item">
+            <p class="question">Q: I want to be a Staff/Mod/Helper. How do I apply?</p>
+            <p class="answer">A: We don't accept applications. If you're useful, we notice you. If you're just asking for power, we already blocked your DMs.</p>
+        </div>
+        
+        <!-- Q18: Contributing -->
+        <div class="faq-item">
+            <p class="question">Q: I'm a developer. Can I contribute to this project?</p>
+            <p class="answer">A: Are you serious? The complexity of our codebase would melt your entry-level laptop. Send us a massive server donation instead.</p>
+        </div>
                     </div>
                 </section>
 
@@ -748,12 +777,125 @@
         </main>
     </div>
 
-    <script>
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const nav = document.getElementById('sidebar-nav');
-        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
-    </script>
+    <div id="toast">Command copied to clipboard!</div>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- MERGED SCRIPT (Mobile Menu + Search) -->
+    <script>
+    // 1. MOBILE MENU LOGIC
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const nav = document.getElementById('sidebar-nav');
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
+    }
+
+    // 2. BACK TO TOP LOGIC
+    const backToTopBtn = document.getElementById("backToTop");
+    if (backToTopBtn) {
+        window.onscroll = function() {
+            // Show button after scrolling down 300px
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    }
+
+    // 3. INSTANT SEARCH LOGIC
+    const searchInput = document.getElementById('cmdSearch');
+    if (searchInput) {
+        const rows = document.querySelectorAll('tbody tr');
+        
+        // Keyboard Shortcut: Press "/" to focus search
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/' && document.activeElement !== searchInput) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+
+        searchInput.addEventListener('keyup', function(e) {
+            const term = e.target.value.toLowerCase();
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(term) ? '' : 'none';
+            });
+            
+            // Hide empty cards if all rows are hidden
+            document.querySelectorAll('.card').forEach(card => {
+                const table = card.querySelector('table');
+                if (table) {
+                    const visibleRows = table.querySelectorAll('tbody tr:not([style*="display: none"])');
+                    card.style.display = visibleRows.length === 0 ? 'none' : '';
+                }
+            });
+        });
+    }
+
+    // 4. CLICK-TO-COPY LOGIC
+    document.querySelectorAll('code').forEach(codeBlock => {
+        codeBlock.addEventListener('click', () => {
+            const text = codeBlock.innerText;
+            navigator.clipboard.writeText(text);
+
+            // Visual Feedback (Flash Green)
+            const originalColor = codeBlock.style.backgroundColor;
+            codeBlock.style.backgroundColor = '#10b981'; // Green
+            codeBlock.style.color = '#000';
+            
+            setTimeout(() => {
+                codeBlock.style.backgroundColor = ''; 
+                codeBlock.style.color = '';
+            }, 500);
+        });
+    });
+
+    // 5. DEEP LINKING AUTOMATION (The missing piece)
+    document.querySelectorAll('table tbody tr').forEach(row => {
+        const commandCell = row.querySelector('td:first-child code');
+        if (commandCell) {
+            // Create an ID: "@collage ban" -> "ban"
+            let commandId = commandCell.innerText.toLowerCase()
+                .replace('@collage', '') // Remove prefix
+                .trim()
+                .replace(/\s+/g, '-');   // Replace spaces with dashes
+            
+            if(commandId) {
+                row.id = commandId;
+            }
+        }
+    });
+
+
+    // 4. CLICK-TO-COPY LOGIC (With Toast)
+    document.querySelectorAll('code').forEach(codeBlock => {
+        codeBlock.addEventListener('click', () => {
+            const text = codeBlock.innerText;
+            navigator.clipboard.writeText(text);
+
+            // Trigger Toast
+            const toast = document.getElementById("toast");
+            toast.innerText = `Copied: ${text}`; // Update text to show what was copied
+            toast.className = "show";
+            
+            // Flash Code Block Green (Keep this, it looks nice combined)
+            const originalColor = codeBlock.style.backgroundColor;
+            codeBlock.style.backgroundColor = 'rgba(16, 185, 129, 0.2)'; // Subtle Green
+            
+            // Hide Toast after 3 seconds
+            setTimeout(function(){ 
+                toast.className = toast.className.replace("show", ""); 
+                codeBlock.style.backgroundColor = '';
+            }, 3000);
+        });
+    });
+</script>
 
 </body>
 </html>

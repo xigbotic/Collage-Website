@@ -78,7 +78,7 @@
                 
                 <!-- Last Updated Alert -->
                 <div class="alert-box" style="margin-bottom: 40px;">
-                    <strong>Last Updated:</strong> October 24, 2025
+                    <strong>Last Updated:</strong> November 24, 2025
                 </div>
 
                 <!-- 1. Introduction -->
@@ -105,15 +105,9 @@
                         </ul>
 
                         <h5 style="color: #fff; margin-top: 20px; margin-bottom: 10px;">B. Automatic Data (Core Features)</h5>
-                        <ul style="margin-bottom: 20px; padding-left: 20px; color: var(--text-muted);">
-                            <li><strong>IDs:</strong> User IDs, Server (Guild) IDs, and Channel IDs are stored to manage settings, economy, and prevent abuse (blacklists).</li>
+                        <ul style="margin-bottom: 0px; padding-left: 20px; color: var(--text-muted);">
+                            <li style="margin-bottom: 10px;"><strong>IDs:</strong> User IDs, Server (Guild) IDs, and Channel IDs are stored to manage server settings, the economy system (coins/balances), and prevent abuse (blacklists).</li>
                             <li><strong>Command Usage:</strong> We process executed commands to provide responses. This is not stored long-term.</li>
-                        </ul>
-
-                        <h5 style="color: #fff; margin-top: 20px; margin-bottom: 10px;">C. Special Data (Privileged Intents)</h5>
-                        <ul style="padding-left: 20px; color: var(--text-muted);">
-                            <li style="margin-bottom: 10px;"><strong>Snipe Command:</strong> Stores the content/author/timestamp of the most recently deleted message temporarily (RAM only). It is overwritten by new deletions or deleted automatically after ~10 minutes.</li>
-                            <li><strong>Leveling System:</strong> We process message content to award XP and prevent spam. We <strong>do not store</strong> message content for this feature. You can opt-out via <code>-xpoptout</code>.</li>
                         </ul>
                     </div>
                 </div>
@@ -125,8 +119,7 @@
                     </div>
                     <div style="padding: 25px;">
                         <ul style="padding-left: 20px; color: var(--text-muted);">
-                            <li><strong>User Data (Last.fm, Levels):</strong> Stored until you request deletion.</li>
-                            <li><strong>Snipe Data:</strong> Temporary (RAM only), not stored in a persistent database.</li>
+                            <li style="margin-bottom: 10px;"><strong>User Data (Last.fm, Economy):</strong> Stored until you request deletion.</li>
                             <li><strong>Server Configs:</strong> Stored as long as the Bot remains in the server.</li>
                         </ul>
                     </div>
@@ -150,9 +143,8 @@
                     <div style="padding: 25px;">
                         <p>You have full control over your data:</p>
                         <ul style="padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
-                            <li><strong>Right to Access:</strong> Request a copy of data stored about you.</li>
-                            <li><strong>Right to Deletion:</strong> Request deletion of specific data (Last.fm, leveling progress).</li>
-                            <li><strong>Right to Opt-Out:</strong> Use <code>-xpoptout</code> to disable leveling tracking.</li>
+                            <li style="margin-bottom: 10px;"><strong>Right to Access:</strong> Request a copy of data stored about you (Economy balance, Last.fm username, etc.).</li>
+                            <li><strong>Right to Deletion:</strong> Request deletion of specific data at any time.</li>
                         </ul>
                     </div>
                 </div>
@@ -189,7 +181,7 @@
                         <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
                             <li style="margin-bottom: 8px;">📧 <strong>Email:</strong> commitarson@representative.com</li>
                             <li style="margin-bottom: 8px;">🔹 <a href="https://discord.gg/wotp" target="_blank">Support Server</a></li>
-                            <li style="margin-bottom: 8px;">👤 <strong>Developers:</strong> <code>xbox360s</code>, <code>ihavemaxauraa</code>, <code>houndswrldd</code></li>
+                            <li style="margin-bottom: 8px;">👤 <strong>Developers:</strong> <code>xbox360s</code>, <code>houndswrldd</code></li>
                         </ul>
                     </div>
                 </div>
