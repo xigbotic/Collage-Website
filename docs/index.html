@@ -143,21 +143,13 @@
                                     <td>Get a comp from Juice WRLD, Uzi, Gunna, Carti.</td>
                                     <td><code>@collage comp</code></td>
                                 </tr>
-                                <tr>
-                                    <td><code>date</code></td>
-                                    <td>Provides all leaks on a specified date.</td>
-                                    <td><code>@collage date 8/22/24</code></td>
-                                </tr>
+                            
                                 <tr>
                                     <td><code>juiceproducer</code></td>
                                     <td>All Juice WRLD tracks by a specific producer.</td>
                                     <td><code>@collage juiceproducer nick mira</code></td>
                                 </tr>
-                                <tr>
-                                    <td><code>leaktracker</code></td>
-                                    <td>Sends all dated leaks to the user.</td>
-                                    <td><code>@collage leaktracker</code></td>
-                                </tr>
+                        
                                 <tr>
                                     <td><code>protools</code></td>
                                     <td>Get any leaked Juice WRLD Pro Tools session.</td>
@@ -237,6 +229,11 @@
                                     <td><code>sotd</code></td>
                                     <td>Sends a randomly picked Juice WRLD song each day.</td>
                                     <td><code>@collage sotd</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>randomsong</code></td>
+                                    <td>Sends a randomly picked Juice WRLD song.</td>
+                                    <td><code>@collage randomsong</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>juiceinfo</code></td>
@@ -354,9 +351,29 @@
                                     <td><code>@collage unban (ID)</code></td>
                                 </tr>
                                 <tr>
+                                    <td><code>hardban</code></td>
+                                    <td>Ban a user and add them to the hardban list.</td>
+                                    <td><code>@collage hardban @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>unhardban</code></td>
+                                    <td>Unban a user and remove them from the hardban list.</td>
+                                    <td><code>@collage unhardban @xbox360s</code></td>
+                                </tr>
+                                <tr>
                                     <td><code>kick</code></td>
                                     <td>Kick a user from the server.</td>
                                     <td><code>@collage kick @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>mute</code></td>
+                                    <td>Mute a user for a specified duration.</td>
+                                    <td><code>@collage mute @xbox360s 7d</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>unmute</code></td>
+                                    <td>Unmute a currently muted user.</td>
+                                    <td><code>@collage unmute @xbox360s</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>lock</code></td>
@@ -369,9 +386,19 @@
                                     <td><code>@collage unlock</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>jailrole</code></td>
-                                    <td>Set your jail role by role ID.</td>
-                                    <td><code>@collage jailrole (ID)</code></td>
+                                    <td><code>slowmode</code></td>
+                                    <td>Set the slowmode delay for the channel.</td>
+                                    <td><code>@collage slowmode 30</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>nuke</code></td>
+                                    <td>Clone and recreate the channel to clear all history.</td>
+                                    <td><code>@collage nuke</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>setup</code></td>
+                                    <td>Run the setup configuration for the jail system.</td>
+                                    <td><code>@collage setup</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>jail</code></td>
@@ -389,10 +416,101 @@
                                     <td><code>@collage purge 99</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>qp</code></td>
-                                    <td>Creates a poll on your message.</td>
-                                    <td><code>@collage qp am i cool</code></td>
+                                    <td><code>purge user</code></td>
+                                    <td>Delete messages from a specific user.</td>
+                                    <td><code>@collage purge user @xbox360s 99</code></td>
                                 </tr>
+                                <tr>
+                                    <td><code>purge bots</code></td>
+                                    <td>Delete messages sent by bots.</td>
+                                    <td><code>@collage purge bots 99</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>purge contains</code></td>
+                                    <td>Deletes messages containing a specific keyword.</td>
+                                    <td><code>@collage purge contains hello</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>embed</code></td>
+                                    <td>Create a highly customizable embed.</td>
+                                    <td><code>@collage embed</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>bc</code></td>
+                                    <td>Clear all bot messages.</td>
+                                    <td><code>@collage bc</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>warn</code></td>
+                                    <td>Warns a user with a optional warning message.</td>
+                                    <td><code>@collage warn @xbox360s bad boy</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>warnings</code></td>
+                                    <td>Check a mentioned users past warnings.</td>
+                                    <td><code>@collage warnings @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>removewarn</code></td>
+                                    <td>Removes a warning from a user by specifying the warn ID.</td>
+                                    <td><code>@collage removewarn @xbox360s 43</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>clearwarns</code></td>
+                                    <td>Clear all warns from a mentioned user.</td>
+                                    <td><code>@collage clearwarns @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>banreason</code></td>
+                                    <td>Update or view the reason for a ban.</td>
+                                    <td><code>@collage banreason @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>forcenick</code></td>
+                                    <td>Force a nickname on a user and prevent them from changing it.</td>
+                                    <td><code>@collage forcenick @xbox360s bad boy</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>role</code></td>
+                                    <td>Manage roles (add/remove) for a user.</td>
+                                    <td><code>@collage role @xbox360s Member</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>role create</code></td>
+                                    <td>Create a new role in the server.</td>
+                                    <td><code>@collage role create cool role</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>role delete</code></td>
+                                    <td>Delete an existing role.</td>
+                                    <td><code>@collage role delete cool role</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>role humans</code></td>
+                                    <td>Add or remove a role for all humans.</td>
+                                    <td><code>@collage role humans Member</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>channel create</code></td>
+                                    <td>Create a new text channel.</td>
+                                    <td><code>@collage channel create cool channel</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>channel delete</code></td>
+                                    <td>Delete a specified channel.</td>
+                                    <td><code>@collage channel delete #cool-channel</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>channel hide</code></td>
+                                    <td>Hide a channel from standard users.</td>
+                                    <td><code>@collage channel hide #cool-channel</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>channel reveal</code></td>
+                                    <td>Make a channel visible to standard users.</td>
+                                    <td><code>@collage channel reveal #cool-channel</code></td>
+                                </tr>
+                            
                             </tbody>
                         </table>
                     </div>
@@ -414,35 +532,22 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td><code>ui</code></td>
+                                    <td>Displays user information.</td>
+                                    <td><code>@collage ui @xbox360s</code></td>
+                                </tr>
+                                <tr>
                                     <td><code>br config role</code></td>
                                     <td>Config booster role ID for custom roles.</td>
                                     <td><code>@collage br config role (ID)</code></td>
                                 </tr>
-                                <tr>
-                                    <td><code>br create</code></td>
-                                    <td>Create a custom booster role.</td>
-                                    <td><code>@collage br create</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>br name</code></td>
-                                    <td>Name your custom booster role.</td>
-                                    <td><code>@collage br name Cool Name</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>br color</code></td>
-                                    <td>Change the color of your booster role via hex.</td>
-                                    <td><code>@collage br color #00ff00</code></td>
-                                </tr>
+                                
                                 <tr>
                                     <td><code>credits</code></td>
                                     <td>Lists project contributors.</td>
                                     <td><code>@collage credits</code></td>
                                 </tr>
-                                <tr>
-                                    <td><code>embed</code></td>
-                                    <td>Create a highly customizable embed.</td>
-                                    <td><code>@collage embed</code></td>
-                                </tr>
+                                
                                 <tr>
                                     <td><code>help</code></td>
                                     <td>View the bot's help menu.</td>
@@ -474,15 +579,66 @@
                                     <td><code>@collage search juiceinfo</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>ui</code></td>
-                                    <td>Show user information/account details.</td>
-                                    <td><code>@collage ui @xbox360s</code></td>
+                                    <td><code>joins</code></td>
+                                    <td>Show a list of the most recent members to join in the past 24 hours.</td>
+                                    <td><code>@collage joins</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>bc</code></td>
-                                    <td>Clear the bot's sent messages.</td>
-                                    <td><code>@collage bc</code></td>
+                                    <td><code>bots</code></td>
+                                    <td>Lists all bots currently in the server.</td>
+                                    <td><code>@collage bots</code></td>
                                 </tr>
+                                <tr>
+                                    <td><code>banner</code></td>
+                                    <td>Display a user's profile banner.</td>
+                                    <td><code>@collage banner @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>sav</code></td>
+                                    <td>Display a users server avatar.</td>
+                                    <td><code>@collage sav @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>sbanner</code></td>
+                                    <td>Display the server's banner image.</td>
+                                    <td><code>@collage sbanner</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>channelinfo</code></td>
+                                    <td>Get detailed info about the current channel.</td>
+                                    <td><code>@collage channelinfo</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>roles</code></td>
+                                    <td>List all roles in the server.</td>
+                                    <td><code>@collage roles</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>inviteinfo</code></td>
+                                    <td>Get information about a specific invite code.</td>
+                                    <td><code>@collage inviteinfo wotp</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>invites</code></td>
+                                    <td>check information of invite codes.</td>
+                                    <td><code>@collage invites</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>inrole</code></td>
+                                    <td>List all users who have a specific role.</td>
+                                    <td><code>@collage inrole CommitArson</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>boosters</code></td>
+                                    <td>List all users currently boosting the server.</td>
+                                    <td><code>@collage boosters</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>getbotinvite</code></td>
+                                    <td>Get the invite link for a specific bot.</td>
+                                    <td><code>@collage getbotinvite @mee6</code></td>
+                                </tr>
+                                
                                 <tr>
                                     <td><code>si</code></td>
                                     <td>Show detailed server information.</td>
@@ -509,6 +665,46 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td><code>qp</code></td>
+                                    <td>Create a quick poll on your message.</td>
+                                    <td><code>@collage qp</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>heardle</code></td>
+                                    <td>Play a game of Juice WRLD Heardle.</td>
+                                    <td><code>@collage heardle</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>hstats</code></td>
+                                    <td>View your or another users Heardle stats.</td>
+                                    <td><code>@collage hstats @xbox360s</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>htop</code></td>
+                                    <td>View the global Heardle leaderboard.</td>
+                                    <td><code>@collage htop</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br create</code></td>
+                                    <td>Create a custom booster role.</td>
+                                    <td><code>@collage br create</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br name</code></td>
+                                    <td>Name your custom booster role.</td>
+                                    <td><code>@collage br name Cool Name</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br color</code></td>
+                                    <td>Change the color of your booster role via hex.</td>
+                                    <td><code>@collage br color #00ff00</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>br icon</code></td>
+                                    <td>Change the icon of your booster role.</td>
+                                    <td><code>@collage br icon</code></td>
+                                </tr>
+                                <tr>
                                     <td><code>price</code></td>
                                     <td>Get detailed statistics of a cryptocurrency.</td>
                                     <td><code>@collage price bitcoin</code></td>
@@ -522,6 +718,96 @@
                                     <td><code>smoke</code></td>
                                     <td>No description available.</td>
                                     <td><code>@collage smoke vape</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>say</code></td>
+                                    <td>Make the bot say a message.</td>
+                                    <td><code>@collage say hello world!</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>urban</code></td>
+                                    <td>Search for a definition on Urban Dictionary.</td>
+                                    <td><code>@collage urban Chicken</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lyrics</code></td>
+                                    <td>Get the lyrics for a specific song.</td>
+                                    <td><code>@collage lyrics Demon Love - Juice WRLD</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>fakemsg</code></td>
+                                    <td>Create a fake message screenshot.</td>
+                                    <td><code>@collage fakemsg @xbox360s hello world!</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>math</code></td>
+                                    <td>Solve a math problem.</td>
+                                    <td><code>@collage math 2+2</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>asciify</code></td>
+                                    <td>Convet text into ASCII art.</td>
+                                    <td><code>@collage asciify hello</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>quote</code></td>
+                                    <td>Generate a quote image from a message. This works by using the context menu only.</td>
+                                    <td><code></code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>imagetogif</code></td>
+                                    <td>Turn a static image to GIF.</td>
+                                    <td><code>@collage imagetogif</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>speechbubble</code></td>
+                                    <td>Add a transparent speech bubble to an image.</td>
+                                    <td><code>@collage speechbubble</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>caption</code></td>
+                                    <td>Add a caption text to the top of an image.</td>
+                                    <td><code>@collage caption hello world!</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>blackandwhite</code></td>
+                                    <td>Convert an image to grayscale.</td>
+                                    <td><code>@collage blackandwhite</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>pixelate</code></td>
+                                    <td>Pixelate an image.</td>
+                                    <td><code>@collage pixelate</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>invert</code></td>
+                                    <td>Invert the colors of an image.</td>
+                                    <td><code>@collage invert</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>deepfry</code></td>
+                                    <td>Apply a deepfry filter to an image.</td>
+                                    <td><code>@collage deepfry</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>stretch</code></td>
+                                    <td>Stretch an image horizontally or vertically.</td>
+                                    <td><code>@collage stretch</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>saturate</code></td>
+                                    <td>Heavily saturate an image.</td>
+                                    <td><code>@collage saturate</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>overlay</code></td>
+                                    <td>Overlay one image onto another.</td>
+                                    <td><code>@collage overlay</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>flip</code></td>
+                                    <td>Flip an image horizontally.</td>
+                                    <td><code>@collage flip</code></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -609,29 +895,49 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>fmset</code></td>
-                                    <td>Set your Last.fm username with the bot.</td>
-                                    <td><code>@collage fmset xignotic</code></td>
+                                    <td><code>lastfm login</code></td>
+                                    <td>Login to your Last.fm account.</td>
+                                    <td><code>@collage lastfm login xignotic</code></td>
                                 </tr>
                                 <tr>
                                     <td><code>fm</code></td>
-                                    <td>Fetch your currently playing track.</td>
+                                    <td>See what you are currently playing on Last.fm.</td>
                                     <td><code>@collage fm</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>ttt</code></td>
-                                    <td>Display your top ten tracks.</td>
-                                    <td><code>@collage ttt</code></td>
+                                    <td><code>lastfm whoknows</code></td>
+                                    <td>Check which users in the server know an artist.</td>
+                                    <td><code>@collage lastfm whoknows Juice WRLD</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>rt</code></td>
-                                    <td>Display your 10 most recent played tracks.</td>
-                                    <td><code>@collage rt</code></td>
+                                    <td><code>lastfm whoknowsalbum</code></td>
+                                    <td>Check which users in the server know an album.</td>
+                                    <td><code>@collage lastfm wka The Party Never Ends - Juice WRLD</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code>ta</code></td>
-                                    <td>Display your top artists.</td>
-                                    <td><code>@collage ta</code></td>
+                                    <td><code>lastfm whoknowstrack</code></td>
+                                    <td>Check which users in the server know a track.</td>
+                                    <td><code>@collage lastfm wkt Cavalier - Juice WRLD</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lastfm latest</code></td>
+                                    <td>Get your latest scrobbles.</td>
+                                    <td><code>@collage latest</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lastfm toptracks</code></td>
+                                    <td>Display your top tracks over a specific period.</td>
+                                    <td><code>@collage lastfm toptracks</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lastfm topartists</code></td>
+                                    <td>Display your top artists over a specific period.</td>
+                                    <td><code>@collage lastfm topartists</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lastfm topalbums</code></td>
+                                    <td>Display your top albums over a specific period.</td>
+                                    <td><code>@collage lastfm topalbums</code></td>
                                 </tr>
                             </tbody>
                         </table>
