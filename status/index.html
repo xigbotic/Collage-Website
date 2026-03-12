@@ -186,11 +186,11 @@
             <div class="content-wrapper">
                 
                 <!-- Main Status Banner -->
-                <div class="alert-box" style="background: rgba(16, 185, 129, 0.08); border-left-color: #10b981; color: #a7f3d0; display: flex; align-items: center;">
-                    <div class="dot operational" style="margin-right: 15px;"></div>
+                <div class="alert-box" style="background: rgba(245, 158, 11, 0.08); border-left-color: #f59e0b; color: #fde68a; display: flex; align-items: center;">
+                    <div class="dot degraded" style="margin-right: 15px;"></div>
                     <div>
-                        <strong style="color: #10b981; display: block; font-size: 1.1em;">All Systems Operational</strong>
-                        <span style="font-size: 0.9em; opacity: 0.8;">Do not open a ticket asking if the bot is down.</span>
+                        <strong style="color: #f59e0b; display: block; font-size: 1.1em;">Services Limited</strong>
+                        <span style="font-size: 0.9em; opacity: 0.8;">Services limited due to an ice storm causing widespread power outages. Estimated restoration: 4:00 PM EST.</span>
                     </div>
                 </div>
 
@@ -201,11 +201,11 @@
                         <span class="telemetry-label">API Latency</span>
                     </div>
                     <div class="telemetry-item">
-                        <span class="telemetry-value">98.79%</span>
+                        <span class="telemetry-value">96.1%</span>
                         <span class="telemetry-label">30-Day Uptime</span>
                     </div>
                     <div class="telemetry-item">
-                        <span class="telemetry-value">352.9GB</span>
+                        <span class="telemetry-value">402GB</span>
                         <span class="telemetry-label">Indexed Files</span>
                     </div>
                 </div>
@@ -214,38 +214,38 @@
                 <div class="status-grid">
                     
                     <!-- Gateway -->
-                    <div class="status-card operational">
+                    <div class="status-card degraded">
                         <span class="status-header">Bot Gateway</span>
                         <div class="status-indicator-wrapper">
                             <div class="dot"></div>
-                            <span class="status-text">Operational</span>
+                            <span class="status-text">Limited</span>
                         </div>
                     </div>
 
                     <!-- Database -->
-                    <div class="status-card operational">
+                    <div class="status-card degraded">
                         <span class="status-header">Leak Database</span>
                         <div class="status-indicator-wrapper">
                             <div class="dot"></div>
-                            <span class="status-text">Operational</span>
+                            <span class="status-text">Limited</span>
                         </div>
                     </div>
 
                     <!-- CDN -->
-                    <div class="status-card operational">
+                    <div class="status-card degraded">
                         <span class="status-header">File CDN</span>
                         <div class="status-indicator-wrapper">
                             <div class="dot"></div>
-                            <span class="status-text">Operational</span>
+                            <span class="status-text">Limited</span>
                         </div>
                     </div>
 
                     <!-- Music Nodes -->
-                    <div class="status-card operational">
+                    <div class="status-card degraded">
                         <span class="status-header">Audio Nodes</span>
                         <div class="status-indicator-wrapper">
                             <div class="dot"></div>
-                            <span class="status-text">Operational</span>
+                            <span class="status-text">Limited</span>
                         </div>
                     </div>
 
@@ -257,6 +257,18 @@
                 <div class="section-header">
                     <h3>Incident History</h3>
                     <p>Evidence that we actually fix things.</p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #f59e0b;">
+                    <div class="card-header">
+                        <h4>March 12, 2026</h4>
+                        <span class="badge premium" style="background: #f59e0b; color: #000;">Degraded</span>
+                    </div>
+                    <div style="padding: 25px;">
+                        <p style="margin-bottom: 5px; color: #fff; font-weight: 600;">Widespread Power Outages</p>
+                        <p>An ice storm has caused widespread power outages, resulting in limited services across the bot. We are working to restore full functionality.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">Estimated restoration: 4:00 PM EST</p>
+                    </div>
                 </div>
 
                  <div class="card" style="border-left: 3px solid #10b981;">
